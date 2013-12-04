@@ -1,0 +1,57 @@
+body {
+	background: url("images/ge_body_bg-297x415.gif");
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	color: #696969;
+	margin:0px;
+}
+.clear {clear:both;}
+#appView {
+	width: 993px;
+	margin: 0 auto;
+}
+/***** Top Bar CSS Start *****/
+#topBar {
+	position: relative;
+	height: 125px;
+	z-index:1;
+}
+.logoSection {
+	position:absolute; 
+	top:0px; 
+	left:5px; 
+	z-index:40;
+}
+.topNav {
+	position:absolute; 
+	top:87px; 
+	left:0px; 
+	width:100%; 
+	z-index:10; 
+	height:38px; 
+	background: url("images/ge_topnav_mid-1x38.gif") repeat-x;
+	border-radius:10px 10px 0px 0px;
+	text-align:center;
+}
+/***** Top Bar CSS End *****/
+
+
+/***** Content Area CSS Start *****/
+#container {
+	background: #6B6B6B;
+}
+.contentArea {
+	border-radius:12px;
+	background:#ffffff;
+	margin:0px 5px;
+	width:983px;
+	float:left;
+}
+/***** Content Area CSS End *****/
+
+
+/***** Container Footer CSS Start *****/
+.containerFooter {
+	background: url("images/ge_footernav_bg-1x42.gif") repeat-x scroll center bottom #6B6B6B;
+	height:30px;
+}
+/***** Container Footer CSS End *****/
