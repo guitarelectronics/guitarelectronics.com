@@ -9,6 +9,26 @@ body {
 	width: 993px;
 	margin: 0 auto;
 }
+
+/***** appPreView CSS Start *****/
+#appPreView {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #6B6B6B;
+    border-radius: 12px;
+    color: #333333;
+    margin: 10px auto;
+    padding: 10px;
+    width: 400px;
+}
+#appPreView .logo {
+	display:block;
+	margin: 0 auto;
+}
+#appPreView #loader {
+	text-align:center;
+}
+/***** appPreView CSS End *****/
+
 /***** Top Bar CSS Start *****/
 #topBar {
 	position: relative;
