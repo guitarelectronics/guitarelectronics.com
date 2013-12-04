@@ -32,18 +32,60 @@ body {
 /***** Top Bar CSS Start *****/
 #topBar {
 	position: relative;
-	height: 125px;
+	height: 138px;
 	z-index:1;
 }
 .logoSection {
 	position:absolute; 
-	top:0px; 
+	top:6px; 
 	left:5px; 
 	z-index:40;
 }
+.headerBarLinks {
+	width:350px;
+	float:right;
+}
+.headerBarLinks > ul {
+    float: left;
+    color: #FFFFFF;
+	font-size: 10px;
+	margin: 5px 0px;
+	padding:0px;
+}
+.headerBarLinks li {
+    display: inline;
+    padding: 0 3px;
+}
+.headerBarLinks a {
+    color: #FFFFFF;
+    text-decoration: none;
+	font-family: Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 10px;
+}
+.headerBarLinks a:hover {
+	text-decoration:underline;
+}
+.topBarCartImg {
+    padding: 6px 5px 0 40px;
+}
+.productSearchForm {margin:6px 0px 0px;}
+.searchBar {
+	width: 240px;
+	height:20px;
+	border:2px solid #6b6b6b;
+}
+.searchBtn {
+	background: none repeat scroll 0 0 #222222;
+    border: 1px solid #6B6B6B;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 26px;
+}
+
 .topNav {
 	position:absolute; 
-	top:87px; 
+	top:100px; 
 	left:0px; 
 	width:100%; 
 	z-index:10; 
@@ -52,6 +94,7 @@ body {
 	border-radius:10px 10px 0px 0px;
 	text-align:center;
 }
+
 /***** Top Bar CSS End *****/
 
 
