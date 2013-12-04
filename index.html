@@ -109,7 +109,78 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 			</form>
 		</div>
 		<div class="topNav">
-			
+			<div class="mainNavContainer">
+				<div class="pointer"
+					onMouseOver="app.ext.store_guitarelectronics.a.showDropDown($(this));"
+					onMouseOut="app.ext.store_guitarelectronics.a.hideDropDown($(this));">
+					<div onClick="return showContent('category',{'navcat' : '.electronic_parts'});" class="mainNavLinks mainNavLine">Guitar Electronic Parts</div>
+						<div class="dropdown displayNone" data-width="215">
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.electronic_parts.battery_accessories'});">Battery Accessories</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.electronic_parts.guitar___bass_jacks'});">Guitar & Bass Jacks & Plugs</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.electronic_parts.guitar___bass_preamps'});">Guitar & Bass Preamps</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.electronic_parts.parts_kits'});">Guitar & Bass Parts Kits</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.electronic_parts.pots'});">Pots-Volume Tone Blend</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.electronic_parts.switches'});">Switches & Pickups Selectors</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.electronic_parts.tone_capacitors'});">Tone Capacitors</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.electronic_parts.wire___shielding'});">Wire & Shielding Supplies</div>
+						</div>
+				</div>
+				<div class="pointer"
+					onMouseOver="app.ext.store_guitarelectronics.a.showDropDown($(this));"
+					onMouseOut="app.ext.store_guitarelectronics.a.hideDropDown($(this));">
+					<div onClick="return showContent('category',{'navcat' : '.guitar___bass_pickups'});" class="mainNavLinks mainNavLine">Guitar & Bass Pickups</div>
+						<div class="dropdown displayNone" data-width="175">
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.guitar___bass_pickups.bass_pickups'});">Bass Pickups</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.guitar___bass_pickups.humbuckers'});">Guitar Humbuckers</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.guitar___bass_pickups.jazz___archtop_pickups'});">Jazz & Archtop Pickups</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.guitar___bass_pickups.soap_bar_pickups'});">Soap Bar Pickups</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.guitar___bass_pickups.strat_pickups'});">Stratocaster Pickups</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.guitar___bass_pickups.tele_pickups'});">Telecaster Pickups</div>
+						</div>
+				</div>
+				<div class="pointer"
+					onMouseOver="app.ext.store_guitarelectronics.a.showDropDown($(this));"
+					onMouseOut="app.ext.store_guitarelectronics.a.hideDropDown($(this));">
+					<div onClick="return showContent('category',{'navcat' : '.parts___hardware'});" class="mainNavLinks mainNavLine">Guitar Parts & Hardware</div>
+						<div class="dropdown displayNone" data-width="215">
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.bridges___saddles'});">Bridges & Saddles</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.jack___control_plates'});">Jack Plates & Mounting Plates</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.knobs'});">Knobs</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.nuts___string_retainers'});">Nuts & String Retainers</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.pickguards___cover_plates});">Pickguards & Cover Plates</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.rings___covers'});">Pickup Rings & Covers</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.screws___springs'});">Screws Springs & Washers</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.small_parts'});">Small Guitar Parts</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.strap_buttons___strap_locks'});">Strap Buttons & Strap Locks</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.switch_tips___trem_arm_tips'});">Switch Tips & Trem Arm Tips</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.parts___hardware.tuning_keys'});">Tuning Keys for Guitar & Bass</div>
+						</div>
+				</div>
+				<div class="pointer"
+					onMouseOver="app.ext.store_guitarelectronics.a.showDropDown($(this));"
+					onMouseOut="app.ext.store_guitarelectronics.a.hideDropDown($(this));">
+					<div onClick="return showContent('category',{'navcat' : '.picks___accessories'});" class="mainNavLinks mainNavLine">Strings & Accessories</div>
+						<div class="dropdown displayNone" data-width="200">
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.picks___accessories.guitar___bass_strings'});">Guitar & Bass Strings</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.picks___accessories.guitar_care_products'});">Guitar Care Products</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.picks___accessories.guitar_picks'});">Guitar Picks</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.picks___accessories.shirts___hats'});">GuitarElectronics Shirts & Hats</div>
+						</div>
+				</div>
+				<div class="pointer"
+					onMouseOver="app.ext.store_guitarelectronics.a.showDropDown($(this));"
+					onMouseOut="app.ext.store_guitarelectronics.a.hideDropDown($(this));">
+					<div onClick="return showContent('category',{'navcat' : '.wiring_resources_guitar_wiring_diagrams'});" class="mainNavLinks lastNavOption">Guitar Wiring Resources</div>
+						<div class="dropdown displayNone" data-width="181">
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams.1_pickup_guitar_wiring_diagrams'});">1 Pickup Guitar Diagrams </div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams.2_pickup_guitar_wiring_diagrams'});">2 Pickup Guitar Diagrams </div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams.3_pickup_guitar_wiring_diagrams'});">3 Pickup Guitar Diagrams </div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams.custom_guitar_wiring_diagrams'});">Custom Wiring Diagrams</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams.guitar_wiring_mods'});">Guitar Wiring Mods</div>
+							<div onClick="app.ext.store_guitarelectronics.a.hideDropDownOnSelect($(this).parent().parent()); return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams.wiring_faqs'});">Guitar Wiring FAQs</div>
+						</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
