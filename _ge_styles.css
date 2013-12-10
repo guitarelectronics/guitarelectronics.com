@@ -2,6 +2,7 @@ body {
 	background: url("images/ge_body_bg-297x415.gif");
 	font-family: Verdana,Arial,Helvetica,sans-serif;
 	color: #696969;
+	font-size:12px;
 	margin:0px;
 }
 .clear {clear:both;}
@@ -9,6 +10,45 @@ body {
 	width: 993px;
 	margin: 0 auto;
 }
+a {
+	color: #f92911;
+}
+h3 {
+    color: #666666;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 2px 0 1px;
+}
+/***** vStore CSS Start *****/
+.zborder {
+    border: 1px solid #CCCCCC;
+}
+.zbox {
+    border: 1px solid #505050;
+}
+
+.zbox_head {
+    background: url("images/ge10_head-1x32.png") repeat-x scroll center top #000000;
+    padding: 6px 10px;
+}
+.zbox_body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 10px;
+}
+.zbox_head {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 11px;
+}
+.ztxt {
+    color: #000000;
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+}
+/***** vStore CSS End *****/
 
 /***** appPreView CSS Start *****/
 #appPreView {
@@ -155,9 +195,11 @@ body {
 	border-radius:12px;
 	background:#ffffff;
 	margin:0px 5px;
-	width:983px;
+	width:962px;
+	padding:10px;
 	float:left;
 }
+
 /***** Content Area CSS End *****/
 
 
@@ -167,3 +209,19 @@ body {
 	height:30px;
 }
 /***** Container Footer CSS End *****/
+
+
+/***** Homepage CSS Start *****/
+.homepageSectionLeft {
+	float:left;
+	width:690px;
+}
+.homepageSectionRight {
+	float:right;
+	width: 257px;
+}
+.homepageBanners {
+	width: 530px; 
+	margin: 0 auto;
+}
+/***** Homepage CSS End *****/
