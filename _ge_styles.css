@@ -203,12 +203,48 @@ h3 {
 /***** Content Area CSS End *****/
 
 
-/***** Container Footer CSS Start *****/
-.containerFooter {
-	background: url("images/ge_footernav_bg-1x42.gif") repeat-x scroll center bottom #6B6B6B;
-	height:30px;
+/***** Footer CSS Start *****/
+#footer {
+	height:100px;
 }
-/***** Container Footer CSS End *****/
+.topFooter{
+	background: url("images/ge_footernav_bg-1x42.gif") repeat-x scroll center bottom #6B6B6B;
+	height:60px;
+	color:#ffffff;
+	font-size:12px;
+	font-weight:bold;
+}
+.footerLinks {
+	width:415px;
+	float:left;
+	padding:10px 8px;
+}
+.topFooter a {
+	color:#ffffff;
+	padding:0px 2px;
+}
+.topFooter a:hover {
+	text-decoration:underline;
+}
+.footerButtons {
+	float:right; 
+	padding:15px 8px;
+}
+.bottomFooter {
+	height:40px;
+	padding:4px 8px 0px;
+}
+.bottomFooter p{
+	margin:0px;
+	font-size:10px;
+}
+.bottomFooter a {
+	color:#696969;
+}
+.bottomFooter img {
+	padding:5px 1px;
+}
+/***** Footer CSS End *****/
 
 
 /***** Homepage CSS Start *****/
