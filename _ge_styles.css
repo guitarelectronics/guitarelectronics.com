@@ -10,6 +10,9 @@ body {
 	width: 993px;
 	margin: 0 auto;
 }
+#appNav{
+	display:none;
+}
 a {
 	color: #f92911;
 }
