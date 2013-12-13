@@ -854,13 +854,27 @@ if you change these, you should move them above this comment so that when you (o
 	<div class='mainColumn'>
 <!-- .textContentArea is used as a selector in quickstart.js because article tag type isn't ie8 friendly -->
 		<div id='aboutArticle' class='textContentArea article'>
-			<h1>About Us</h1>
-			<div data-bind='var: profile(zoovy:about); format:wiki; wikiFormats:myRIA;' id='aboutUsContent'></div>
+			<div class="policyPageTitle">
+				<h1>About GuitarElectronics.com</h1>
+			</div>
+			<img class="floatLeft" src="images/guitar_electronics_corporate_copyright_logo.jpg"/>
+			<div style="width:490px;" class="ztxt floatRight">
+				<p style="margin-bottom:3px;"><b>GuitarElectronics.com</b></p>
+				<p>In 1996, Guitar Electronics began publishing custom guitar wiring diagrams online and providing high quality parts to upgrade and customize guitars and basses. Thanks to the millions of web visitors and thousands of online customers we service on our site each year, our website has become known around the world for having the best selection of guitar electronics parts and wiring diagrams in the world. Although we have hundreds of guitar wiring diagram online for free, people often request custom guitar wiring diagrams that are not available online anywhere. That's why we started GuitarDiagrams.com which is the first online service for ordering custom drawn guitar wiring diagrams. Even top companies like Fender, Gibson, Seymour Duncan and many others refer their customers to our websites for wiring diagrams and wiring resources.</p>
+			</div>
 		</div>
 
 
 		<div id='contactArticle' class='displayNone textContentArea'>
-			<h1>Contact Information</h1>
+			<div class="policyPageTitle">
+				<h1>Contact Information</h1>
+			</div>
+			<div style="width:450px;" class="floatLeft ztxt">
+				<p><b>Product & Tech Support Questions:</b> Not sure about a part? Email our staff and our techs can answer your questions regarding any product on our site as well as your brief repair questions. Please be patient and we will get your questions as fast as possible.</p>
+				<p><b>To Check Order Status:</b> <a href="#" onClick="return showContent('customer',{'show':'myaccount'});">Login To Your Account</a> and click on the order number you wish to get an update on.</p>
+				<p><b>Return Authorizations:</b> Please view our <a href="#" onClick="return showContent('company',{'show':'return'});">Return Policies</a> and use the form below to request a Return Authorization code. Be sure to put the order number and "Return Authorization" in the subject field. For shipping questions. pleas view our <a href="#" onClick="return showContent('company',{'show':'shipping'});">Shipping Policies</a>.</p>
+			</div>
+			
 			<form action='#' onSubmit="app.calls.appSendMessage.init($(this).serializeJSON(),{'callback':'showMessaging','parentID':'contactFormMessaging','message':'Thank you, your message has been sent'},'immutable'); app.model.dispatchThis('immutable');  return false;" id='contactForm' name='contactForm'>
 			<fieldset>
 				<legend>Contact Us</legend>
@@ -873,62 +887,71 @@ if you change these, you should move them above this comment so that when you (o
 				</div>
 			</fieldset>
 			</form>
-			<div data-bind='var: profile(zoovy:contact); format:wiki; wikiFormats:myRIA;' id='contactContent'></div>
+			
 		</div>
-
-
-
-		<div id='faqArticle' class='displayNone textContentArea'>
-			<h1>Frequently Asked Questions</h1>
-			<div id='faqContent' class='loadingBG ui-accordion ui-widget ui-helper-reset ui-accordion-icons appAccordianesque'></div>
-		</div>
-
 
 
 		<div class='displayNone textContentArea' id='paymentArticle'>
-			<h1>Payment Policy</h1>
-			<div data-bind='var: profile(zoovy:payment_policy); format:wiki; wikiFormats:myRIA;' id='paymentContent'></div>
+			<div class="policyPageTitle">
+				<h1>Payment Policy</h1>
+			</div>
+			<div class="ztxt">
+				<p>GuitarElectronics.com securely accepts online payments from Visa, MasterCard, Discover Card, and PayPal for both domestic and international orders.</p>
+				<p><b>When Paying Pay By Credit Card:</b></p>
+				<ul>
+					<li>Be sure to accurately enter the address where you receive your credit card statements.</li>
+					<li>Note: International credit cards are accepted from low risk countries and are subject to bank verification.</li>
+				</ul>
+				<p><b>When Paying by Pay By PayPal:</b></p>
+				<ul>
+					<li>Be sure to use your PayPal email address when placing a PayPal order. PayPal will over ride the shipping address with the address listed on your PayPal account regardless of what address you enter. If you paid by Credit Card, your card will only be charged for the items we have in stock and ship. When the out of stock item is available, we will bill for that item at that time and ship ship it free. If you paid by PayPal, We will ship the items that are in stock and ship the out of stock item when it becomes available at no additional charge. Note that we can not split PayPal payments so you will be billed for the entire order at the time of checkout. You can also Contact Us to cancel a backordered credit card or PayPal order at any time. (and receive a refund for the caned item if you paid by PayPal)</li>
+				</ul>
+			</div>
 		</div>
 
 
 		<div class='displayNone textContentArea' id='privacyArticle'>
-			<h1>Privacy Statement</h1>
-	<h4>About this Privacy Policy:</h4>
-	<p>The entire site, or at least specific portions of this site are assisted by Zoovy technology. Zoovy has created this privacy policy as a template for customers who are using Zoovy technology with their websites. Zoovy in no way takes responsibility for the accuracy or enforcement of this policy. For a copy of Zoovy's privacy policy (which does not necessarily apply to the customers of its customers) visit http://www.zoovy.com/legal</p>
+			<div class="policyPageTitle">
+				<h1>Privacy Statement</h1>
+			</div>
+			<div class="ztxt">
+				<p><b>About this Privacy Policy:</b></p>
+				<p>The entire site, or at least specific portions of this site are assisted by Zoovy technology. Zoovy has created this privacy policy as a template for customers who are using Zoovy technology with their websites. Zoovy in no way takes responsibility for the accuracy or enforcement of this policy. For a copy of Zoovy's privacy policy (which does not necessarily apply to the customers of its customers) visit http://www.zoovy.com/legal</p>
 
-	<p>Zoovy, Inc. has created this privacy statement for this Company in order to demonstrate our joint commitment to privacy. The following discloses the information gathering and dissemination practices for this website:</p>
+				<p>Zoovy, Inc. has created this privacy statement for this Company in order to demonstrate our joint commitment to privacy. The following discloses the information gathering and dissemination practices for this website:</p>
 
-	<h5>Zoovy.com tracks IP Addresses</h5>
-	<p>Your IP address is used to help diagnose problems with our server, and to administer the Web site, in addition your IP address is used to help identify you and your shopping cart (in conjunction with a cookie.) We also use cookies to deliver content specific to your interests and to save your password so you don't have to re-enter it each time you visit our site.</p>
-
-
-	<h3>This site may contains links to other sites.</h3>
-	<p>This Company is not responsible for the privacy practices or the content of such Web sites, unless otherwise specified below your information is never shared with other companies, even those who are also using Zoovy technology. In the future Zoovy may provide you the ability to share your information across multiple websites which all utilize Zoovy technology however this will only be done at your explicit request.</p>
-
-	<h3>This site requires Unique Identifiers.</h3>
-	<p>This site uses an order form for customers to request information, products, and services, it also collects visitor's contact information (like their email address), in some circumstances their unique identifiers (like their pets name, or mothers maiden name), and financial information (like their account or credit card numbers). Contact information from the order form is used to send orders and information about our company to customers. The customer's contact information is also used to get in touch with the visitor when necessary. Users may opt-out of receiving future informational mailings; see the choice/opt-out section below, users may NOT opt out of receiving order notifications, or other contacts which are deemed essential by this Company.</p>
-
-	<h3>This site requires Financial Information.</h3>
-	<p>Financial information that is collected is used to bill the customer for products and services. Unique identifiers (such as pets name, and mothers maiden name) are collected from Web site visitors to verify the user's identity.</p>
-
-	<h3>This site may have Surveys and/or Contests.</h3>
-	<p>Our online surveys ask visitors for contact information (like their email address). We use contact data from our surveys to send the user information about our company. The customer's contact information is also used to contact the visitor when necessary. Users may opt-out of receiving future mailings; see the choice/opt-out section below. This site may also run contests in which case we may ask visitors for contact information (like their email address). Generally this information is used to verify eligibility, however we may also use contact data from our contests to send users information about this Company. The customer's contact information is also used to contact the visitor when necessary (for example winners). Users may opt-out of receiving future mailings; see the choice/opt-out section below. Financial information that is collected from our users is used to check the users' qualifications for registration and bill the user for products and services.</p>
+				<p><b>Zoovy.com tracks IP Addresses</b></p>
+				<p>Your IP address is used to help diagnose problems with our server, and to administer the Web site, in addition your IP address is used to help identify you and your shopping cart (in conjunction with a cookie.) We also use cookies to deliver content specific to your interests and to save your password so you don't have to re-enter it each time you visit our site.</p>
 
 
-	<h3>Third Party Cookies</h3>
-	<p>Third party vendors, including Google, use cookies to serve the badge on the website and to serve ads based on a user's prior visits to the website.  Users may opt out of Google's use of cookies by visiting the Google advertising opt-out page.</p>
+				<p><b>This site may contains links to other sites.</b></p>
+				<p>This Company is not responsible for the privacy practices or the content of such Web sites, unless otherwise specified below your information is never shared with other companies, even those who are also using Zoovy technology. In the future Zoovy may provide you the ability to share your information across multiple websites which all utilize Zoovy technology however this will only be done at your explicit request.</p>
 
-	<h3>This site may contain Public Forums</h3>
-	<p>This site may include chat rooms, forums, message boards, and/or news groups available to its users. Please remember that any information that is disclosed in these areas becomes public information and you should exercise caution when deciding to disclose your personal information.</p>
+				<p><b>This site requires Unique Identifiers.</b></p>
+				<p>This site uses an order form for customers to request information, products, and services, it also collects visitor's contact information (like their email address), in some circumstances their unique identifiers (like their pets name, or mothers maiden name), and financial information (like their account or credit card numbers). Contact information from the order form is used to send orders and information about our company to customers. The customer's contact information is also used to get in touch with the visitor when necessary. Users may opt-out of receiving future informational mailings; see the choice/opt-out section below, users may NOT opt out of receiving order notifications, or other contacts which are deemed essential by this Company.</p>
 
-	<h3>About our System Security</h3>
-	<p>This site has security measures in place to protect the loss, misuse and alteration of the information under our control. Information is stored behind a firewall, against a password protected database system. Whenever sensitive information is accessed it is transmitted using strong SSL encryption. this Company may keep a copy of your information on its own system using Zoovy's WebAPI system, this system may have its own security measures in place.</p>
+				<p><b>This site requires Financial Information.</b></p>
+				<p>Financial information that is collected is used to bill the customer for products and services. Unique identifiers (such as pets name, and mothers maiden name) are collected from Web site visitors to verify the user's identity.</p>
 
-	<h3>This site provides the choice to Opt In or Out</h3>
-	<p>Our site provides users the opportunity to opt-out of receiving communications from us at the point where we request information about the visitor. This site gives users the following options for removing their information from our database to not receive future communications or to no longer receive our service. Each time an information email is distributed, you have the option to use unique unsubscribe url which is attached to each outgoing email. Customers may unsubscribe at any time by simply logging into their accounts.</p>
+				<p><b>This site may have Surveys and/or Contests.</b></p>
+				<p>Our online surveys ask visitors for contact information (like their email address). We use contact data from our surveys to send the user information about our company. The customer's contact information is also used to contact the visitor when necessary. Users may opt-out of receiving future mailings; see the choice/opt-out section below. This site may also run contests in which case we may ask visitors for contact information (like their email address). Generally this information is used to verify eligibility, however we may also use contact data from our contests to send users information about this Company. The customer's contact information is also used to contact the visitor when necessary (for example winners). Users may opt-out of receiving future mailings; see the choice/opt-out section below. Financial information that is collected from our users is used to check the users' qualifications for registration and bill the user for products and services.</p>
 
-	<h3>We provide the ability to Correct/Update YOUR information.</h3>
-	<p>This site gives users the following options for changing and modifying information previously provided. Simply visit the customer login area of this website.</p>
+
+				<p><b>Third Party Cookies</b></p>
+				<p>Third party vendors, including Google, use cookies to serve the badge on the website and to serve ads based on a user's prior visits to the website.  Users may opt out of Google's use of cookies by visiting the Google advertising opt-out page.</p>
+
+				<p><b>This site may contain Public Forums</b></p>
+				<p>This site may include chat rooms, forums, message boards, and/or news groups available to its users. Please remember that any information that is disclosed in these areas becomes public information and you should exercise caution when deciding to disclose your personal information.</p>
+
+				<p><b>About our System Security</b></p>
+				<p>This site has security measures in place to protect the loss, misuse and alteration of the information under our control. Information is stored behind a firewall, against a password protected database system. Whenever sensitive information is accessed it is transmitted using strong SSL encryption. this Company may keep a copy of your information on its own system using Zoovy's WebAPI system, this system may have its own security measures in place.</p>
+
+				<p><b>This site provides the choice to Opt In or Out</b></p>
+				<p>Our site provides users the opportunity to opt-out of receiving communications from us at the point where we request information about the visitor. This site gives users the following options for removing their information from our database to not receive future communications or to no longer receive our service. Each time an information email is distributed, you have the option to use unique unsubscribe url which is attached to each outgoing email. Customers may unsubscribe at any time by simply logging into their accounts.</p>
+
+				<p><b>We provide the ability to Correct/Update YOUR information.</b></p>
+				<p>This site gives users the following options for changing and modifying information previously provided. Simply visit the customer login area of this website.</p>
+			</div>
 	<!-- !!! load amendments here -->
 		</div>
 
@@ -936,15 +959,38 @@ if you change these, you should move them above this comment so that when you (o
 
 
 		<div class='displayNone textContentArea' id='returnArticle'>
-			<h1>Return Policy</h1>
-			<div data-bind='var: profile(zoovy:return_policy); format:wiki; wikiFormats:myRIA;' id='returnContent'></div>
+			<div class="policyPageTitle">
+				<h1>Return Policy</h1>
+			</div>
+			<div class="ztxt">
+				<p>Thank you for choosing GuitarElectronics.com for your guitar parts and accessories needs. We appreciate your business and your satisfaction is 100% guaranteed! We carry only the highest quality parts and inspect each item in every order so the number returns we get it extremely low. However, in the event you are not happy with an item or you can not use it for any reason, send it back within thirty (30) days for a refund-No problem. Contact Us to get a Return Authorization Code </p>
+				<p><b>What if I want to return an item for a refund or exchange?</b> You can return any item for any reason as long as:</p>
+				<ul>
+					<li>You request an Return Authorization Code within 30 days of purchase.</li>
+					<li>The item returned is in 100% new/resalable condition. </li>
+					<li>Electrical items have not been soldered or have the wires cut.</li>
+					<li>The returned item has all of the original undamaged packing.</li>
+				</ul>
+				<p><b>How do I get a Return Authorization Code to return or exchange an item?</b> Simply Contact Us and include your order number and item(s)  your want to return or exchange and we will send you a Return Authorization Code by email. Be sure to put the RA on the outside of the box when returning it. Packages sent without an RA will not be accepted for refund or exchange.  </p>
+				<p><b>What if an item is defective?</b> Contact Us with the details of the problem and include your order number and item you are having trouble with and we will send you a Return Authorization Code by email to send the item back for an exchange. A replacement will only be sent after the defective item has been received.</p>
+				<p><b>Who pays shipping on returns and exchanges?</b> The customer is responsible for the shipping costs of any items returned for refund plus return shipping on any items requested for exchange. If an item returned is found to be defective, it should be returned by First Class Mail and and a replacement will be shipped at no charge. The customer will be refunded the amount of the First Class mail return postage. If the customer chooses to return the item via another shipping method other that firt class mail, it is done at their expense. If an item returned is found not to be defective, we will return it at no charge and no shipping refund will be issued.</p>
+				<p><b>When will I receive my refund for an item that was returned?</b> Refunds typically take 10-14 days from when they are received to be processed and credited. You will receive an email when your refund is processed and your card or account has been credited. Pleas allow a day for the refund to post to your PayPal account and a few days more for credit card refunds to post.</p>
+			</div>
 		</div>
 
 
 
 		<div class='displayNone textContentArea' id='shippingArticle'>
-			<h1>Shipping Information</h1>
-			<div data-bind='var: profile(zoovy:shipping_policy); format:wiki; wikiFormats:myRIA;' id='shippingContent'></div>
+			<div class="policyPageTitle">
+				<h1>Shipping Information</h1>
+			</div>
+			<div class="ztxt">
+				<p><b>Shipping Policy:</b> GuitarElectronics.com ships web orders via First Class Mail, Priority Mail and Express Mail. Shipping is determined by the package weight and type of service the customer selects. All orders are shipped with delivery confirmation to notify us when and where the package was delivered. Please visit our <a href="#" onClick="return showContent('category',{'navcat':'.shipping'});">Shipping Polices Page</a> for more information on shipping options and policies.</p>
+				<p><b>When will my order be processed shipped and when will I get it?</b> Orders are processed Monday through Friday during business hours. Web orders placed during the week usually ship the same day. Orders placed later in the day, over the weekend or on holidays are processed and shipped the next business day. Shipping time varies depending on the shipping class you choose. For more information on shipping classes and times, please visit our Shipping Policies Page.</p>
+				<p><b>Can I track my order on line?</b> Tracking is NOT provided if you selected First Class Mail or Priority Mail in the USA, (delivery conformation is provided). Online tracking is provided if you selected Express Mail for your USA order or or International Priority Mail or International Express Mail.</p>
+				<p><b>What is the difference between Delivery Conformation and Online Tracking?</b> Delivery conformation notifies the shipper that the package was delivered and the time and location of the delivery. delivery conformation will not provide and accurate information while the package is in transit. Tracking allows the shipper to </p>
+				<p><b>Can my order be shipped internationally?</b> Yes, we offer shipping to most countries around the world. Payment on international order can be made by PayPal.International orders to low fraud risk countries can can also be paid for by credit card.</p>
+			</div>
 		</div>
 
 	</div>
