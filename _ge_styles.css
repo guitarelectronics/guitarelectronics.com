@@ -312,3 +312,17 @@ h3 {
     font-weight: bold;
 }
 /***** Category Page CSS End *****/
+
+
+/***** ProdListTemplate CSS Start *****/
+.productList {
+    border-top: 1px solid #CCCCCC;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.productList > li {
+    height: 250px;
+    position: relative;
+    width: 176px;
+}
+/***** ProdListTemplate CSS End *****/
