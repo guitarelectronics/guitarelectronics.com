@@ -299,3 +299,16 @@ h3 {
 	padding:5px;
 }
 /***** Company Page CSS End *****/
+
+
+/***** Category Page CSS Start *****/
+.categoryList > li {
+    height: 175px;
+    width: 175px;
+}
+.catName {
+    color: #F92911;
+    font-size: 12px;
+    font-weight: bold;
+}
+/***** Category Page CSS End *****/
