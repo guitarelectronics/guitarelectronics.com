@@ -302,6 +302,11 @@ h3 {
 
 
 /***** Category Page CSS Start *****/
+.categoryList {
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
 .categoryList > li {
     height: 175px;
     width: 175px;
@@ -315,14 +320,21 @@ h3 {
 
 
 /***** ProdListTemplate CSS Start *****/
-.productList {
-    border-top: 1px solid #CCCCCC;
-    margin-top: 15px;
-    padding-top: 15px;
-}
+
 .productList > li {
-    height: 250px;
+    height: 245px;
     position: relative;
     width: 176px;
+}
+.prodViewerAddToCartForm {
+    bottom: 8px;
+    margin: 0;
+    position: absolute;
+}
+.addToCartBtn.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only {
+    background: url("images/ge_btn_add_4pl-87x18.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 0;
+    height: 23px;
+    width: 90px;
 }
 /***** ProdListTemplate CSS End *****/

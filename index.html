@@ -435,13 +435,11 @@ remember to NOT put the button inside the 'onclick' container or two events will
 
 		<b><div class="ztxt" data-bind='var: product(zoovy:base_price); format:money; currencySign: $;  hideZero:true; className:price; pretext: Our Price: ;'></div></b>
 		
-		<span data-bind='var: reviews(reviews.average); format:addClass; className:review_;' class='reviewSprite'></span>
-<!-- 	<span data-bind='var: reviews(reviews.total); format:text; pretext: from ;posttext: reviews; className:numReviews;'></span> -->
 	</div>
 	
 	<form data-bind='var: product(pid); format:atcForm; extension:store_product;' class='prodViewerAddToCartForm clearfix' action='#' onSubmit="app.ext.myRIA.u.addItemToCart($(this),{'action':'modal'}); return false;">
 		<input type='hidden' name='qty' value='1' />
-		<button data-bind='format:addToCartButton; extension:myRIA; useParentData:true;'>more details</button>
+		<button class="addToCartBtn" data-bind='format:addToCartButton; extension:myRIA; useParentData:true;'>More Details</button>
 	</form>
 	
 </li>
