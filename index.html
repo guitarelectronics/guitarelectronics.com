@@ -193,52 +193,56 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 	** REMINDER : DO NOT PUT ANY GRAPHICS/CONTENT THAT SHOULD NOT APPEAR ON EVERY PAGE IN THE VIEW (HERE)
 	**				  INSTEAD PUT THEM INTO <div id="homepageTemplate"></div>
 	-->
-<div id="container">
-	<div class="contentArea">
-		<div id='globalMessaging' class='appMessaging'></div><!-- DO NOT REMOVE - used for some high level error handling (usually appears below breadcrumb nav or top bar) -->
+	<div id="container">
+		<div class="contentArea">
+			<div id='globalMessaging' class='appMessaging'></div><!-- DO NOT REMOVE - used for some high level error handling (usually appears below breadcrumb nav or top bar) -->
 
-		<!-- These add specific functionality for the app. In most cases, you want to leave them alone. -->
-		<div id='appNav'>
-			<button class='displayNone prodDetailNextItemButton' data-app-role='prodDetailNextItemButton'>Next</button>
-			<button class='displayNone prodDetailPrevItemButton' data-app-role='prodDetailPrevItemButton'>Previous</button>
-		</div>
+			<!-- These add specific functionality for the app. In most cases, you want to leave them alone. -->
+			<div id='appNav'>
+				<button class='displayNone prodDetailNextItemButton' data-app-role='prodDetailNextItemButton'>Next</button>
+				<button class='displayNone prodDetailPrevItemButton' data-app-role='prodDetailPrevItemButton'>Previous</button>
+			</div>
 
-		<div id='mainContentArea'></div><!-- DO NOT REMOVE - this is where the specific page (ex: homepage, product, category) content is going to go -->
+			<div id='mainContentArea'></div><!-- DO NOT REMOVE - this is where the specific page (ex: homepage, product, category) content is going to go -->
+		</div>
+		<div id="sidebarRight" class="displayNone">
+			<img src="images/guitar_and_bass_custom_drawn_wiring_diagrams.jpg"/>
+		</div>	
+		<div class="clear"></div>
 	</div>
-	<div class="clear"></div>
-</div>	
-<div id="footer">
-	<div class="topFooter">
-		<div class="footerLinks">
-			<a onClick="return showContent('homepage');">Home</a>|
-			<a onClick="return showContent('');">Contact</a>|
-			<a onClick="return showContent('');">Company</a>|
-			<a onClick="return showContent('');">Shipping</a>|
-			<a onClick="return showContent('');">Return</a>|
-			<a onClick="return showContent('');">My Account</a>|
-			<a onClick="return showContent('');">Privacy</a>|
-			<a onClick="return showContent('');">Recent News</a>|
-			<a onClick="return showContent('');">Our Banners</a>
+
+	<div id="footer">
+		<div class="topFooter">
+			<div class="footerLinks">
+				<a onClick="return showContent('homepage');">Home</a>|
+				<a onClick="return showContent('');">Contact</a>|
+				<a onClick="return showContent('');">Company</a>|
+				<a onClick="return showContent('');">Shipping</a>|
+				<a onClick="return showContent('');">Return</a>|
+				<a onClick="return showContent('');">My Account</a>|
+				<a onClick="return showContent('');">Privacy</a>|
+				<a onClick="return showContent('');">Recent News</a>|
+				<a onClick="return showContent('');">Our Banners</a>
+			</div>
+			<div class="footerButtons">
+				<a onClick="return showContent('cart',{});"><img src="images/ge_btn_viewcart-145x28.gif"/></a>
+				<a onClick="return showContent('checkout',{});"><img src="images/ge_btn_checkout-145x28.gif"/></a>
+			</div>
 		</div>
-		<div class="footerButtons">
-			<a onClick="return showContent('cart',{});"><img src="images/ge_btn_viewcart-145x28.gif"/></a>
-			<a onClick="return showContent('checkout',{});"><img src="images/ge_btn_checkout-145x28.gif"/></a>
+		<div class="bottomFooter">
+			<div class="floatLeft">
+				<p>Copyright © 2013. All Rights Reserved.</p>
+				<p>E-Commerce solution provided by <a class="pointer" target="_blank" href="https://www.zoovy.com/">Zoovy</a></p>
+			</div>
+			<div class="floatRight">
+				<img src="images/cc_visa-33x21.gif"/>
+				<img src="images/cc_mc-33x21.gif"/>
+				<img src="images/cc_discover-33x21.gif"/>
+				<img src="images/cc_amex-33x21.gif"/>
+				<img src="images/paypal-33x21.gif"/>
+			</div>
 		</div>
 	</div>
-	<div class="bottomFooter">
-		<div class="floatLeft">
-			<p>Copyright © 2013. All Rights Reserved.</p>
-			<p>E-Commerce solution provided by <a class="pointer" target="_blank" href="https://www.zoovy.com/">Zoovy</a></p>
-		</div>
-		<div class="floatRight">
-			<img src="images/cc_visa-33x21.gif"/>
-			<img src="images/cc_mc-33x21.gif"/>
-			<img src="images/cc_discover-33x21.gif"/>
-			<img src="images/cc_amex-33x21.gif"/>
-			<img src="images/paypal-33x21.gif"/>
-		</div>
-	</div>
-</div>
 
 <!-- ... your html ends -->
 <!-- /VIEW CONTENT -->

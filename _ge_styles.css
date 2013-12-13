@@ -190,6 +190,7 @@ h3 {
 /***** Content Area CSS Start *****/
 #container {
 	background: #6B6B6B;
+	width:100%;
 }
 .contentArea {
 	border-radius:12px;
@@ -201,6 +202,16 @@ h3 {
 }
 
 /***** Content Area CSS End *****/
+
+
+/***** Sidebar Right CSS Start *****/
+#sidebarRight {
+	width:163px;
+	float:right;
+	background: #6B6B6B;
+	text-align:center;
+}
+/***** Sidebar Right CSS End *****/
 
 
 /***** Footer CSS Start *****/
