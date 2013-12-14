@@ -38,19 +38,19 @@ var store_guitarelectronics = function() {
 				app.rq.push(['templateFunction', 'categoryTemplate','onCompletes',function(P) {
 					var $context = $(app.u.jqSelector('#',P.parentID));		
 					$('#sidebarRight').show();
-					$('.contentArea').css({"width":"800px"});
+					$('.contentArea').css({"width":"800px","margin":"0px 0px 0px 5px"});
 				}]);
 
 				app.rq.push(['templateFunction', 'productTemplate','onCompletes',function(P) {
 					var $context = $(app.u.jqSelector('#',P.parentID));		
 					$('#sidebarRight').show();
-					$('.contentArea').css({"width":"800px"});
+					$('.contentArea').css({"width":"800px","margin":"0px 0px 0px 5px"});
 				}]);
 				
 				app.rq.push(['templateFunction', 'searchTemplate','onCompletes',function(P) {
 					var $context = $(app.u.jqSelector('#',P.parentID));		
 					$('#sidebarRight').show();
-					$('.contentArea').css({"width":"800px"});
+					$('.contentArea').css({"width":"800px","margin":"0px 0px 0px 5px"});
 				}]);
 				
 				app.rq.push(['templateFunction', 'homepageTemplate','onCompletes',function(P) {

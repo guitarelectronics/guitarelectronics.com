@@ -215,9 +215,13 @@ h3 {
 /***** Sidebar Right CSS Start *****/
 #sidebarRight {
 	width:163px;
+	padding:0px 2px;
 	float:right;
 	background: #6B6B6B;
 	text-align:center;
+}
+#sidebarRight img {
+    margin-bottom: 4px;
 }
 /***** Sidebar Right CSS End *****/
 
