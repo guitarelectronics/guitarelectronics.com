@@ -47,7 +47,7 @@ h3 {
     font-size: 11px;
 }
 .ztitle {
-    color: #414141;
+    color: #000000;
     font-size: 16px;
     font-weight: bold;
 }
@@ -350,3 +350,46 @@ h3 {
     width: 90px;
 }
 /***** ProdListTemplate CSS End *****/
+
+/***** ProductTemplate CSS Start *****/
+.productPage {
+	color:#000000;
+}
+.imageContainer {
+	padding-right:20px;
+}
+.imageContainer img {
+    border: 1px solid #CCCCCC;
+}
+.prodViewerContainer .prodThumbs div {
+	margin: 5px 0px 0px;
+}
+.ui-button.ui-button-text.ui-corner-all.ui-state-default.addToCartButton {
+    background: url("images/ge10_add_to_cart.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    border-radius: 0;
+    font-size: 0;
+    height: 28px;
+    width: 145px;
+}
+.prodMfg .underline {
+    color: #F92911;
+}
+.prodMSRP span {
+    padding-left: 3px;
+    text-decoration: line-through;
+}
+.basePrice {
+	font-weight:bold;
+}
+.savings {
+	color:#006600;
+}
+.prodlistRelatedContainer h2{
+	background:#cccccc;
+	color:#444444;
+	border:1px solid #444444;
+	border-radius:4px;
+	padding:1px 10px;
+}
+/***** ProductTemplate CSS End *****/
