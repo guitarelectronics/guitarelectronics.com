@@ -411,3 +411,9 @@ h3 {
 	border:none;
 }
 /***** CartTemplate CSS End *****/
+/***** CheckoutTemplate CSS Start *****/
+.placeOrderButton.ui-state-highlight.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only{
+	background:none;
+	border:none;
+}
+/***** CheckoutTemplate CSS End *****/
