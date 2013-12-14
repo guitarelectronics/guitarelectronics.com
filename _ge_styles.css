@@ -397,3 +397,17 @@ h3 {
 	padding:1px 10px;
 }
 /***** ProductTemplate CSS End *****/
+
+/***** CartTemplate CSS Start *****/
+.ui-widget-header.ui-helper-clearfix.ui-corner-all.ui-header {
+    font-size: 12px;
+}
+.ui-button-text-only.ui-button.ui-state-default.ui-corner-all.continueShoppingButton{
+	background:none;
+	border:none;
+}
+.checkoutButton.ui-button.ui-button-text.ui-state-default.ui-corner-all{
+	background:none;
+	border:none;
+}
+/***** CartTemplate CSS End *****/

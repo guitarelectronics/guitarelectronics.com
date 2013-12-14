@@ -1228,17 +1228,18 @@ So the cart template should contain these two elements and the extension should 
 <div id='cartTemplate' class='loadingBG'>
 
 <form id='cartTemplateForm' action='#' onSubmit='return false'>
-
-<div class='cartStuffContainer'>
+<table class='cartContainer'>
+<tr>
+	<td class='cartStuffContainer'>
 	<ul id='cartStuffList' data-bind="var: cart(@ITEMS); format:stuffList; loadsTemplate:productListTemplateCart;" class='listStyleNone fluidList clearfix noPadOrMargin productList lineItemProdlist'></ul>
-</div>
+	</td>
 
-<div class='cartSummaryTotalsContainer'>
+	<td class='cartSummaryTotalsContainer'>
 	<div class='ui-widget ui-widget-content ui-helper-clearfix ui-corner-all'>
-		<h2 class='ui-widget-header ui-helper-clearfix ui-corner-all ui-header stdPadding'>Cart Totals</h2>
-		<div class='cartSummaryContainer stdPadding'>
+		<h2 class='ui-widget-header ui-helper-clearfix ui-corner-all ui-header'>Cart Totals</h2>
+		<div class='cartSummaryContainer'>
 
-<section id='cartTemplateCostSummary' class='cartSummary marginBottom'>
+<section id='cartTemplateCostSummary' class='cartSummary'>
 
 	<div data-bind="var: cart(sum/items_total); format:money; className:orderSubtotal; hideZero:false; currencySign: $; pretext:Subtotal: ; "></div>
 
@@ -1256,43 +1257,54 @@ So the cart template should contain these two elements and the extension should 
 
 </section>
 
-<section id='cartTemplateShippingContainer' class='marginBottom'>
+<section id='cartTemplateShippingContainer'>
 	<h3>Shipping:</h3>
-
-	<div class='cartZipCodeContainer marginBottom'>
-		<label for='data-ship_zip'>Zip/Postal Code:</label>
-		<input type='text' size='6'  name='ship/postal' id='data-ship_zip' value='' data-bind='var: cart(ship/postal); format:popVal;' maxlength='10' onChange="app.calls.cartSet.init({'ship/postal':this.value, 'ship/region':''});
-			app.ext.store_cart.u.updateCartSummary();
-			app.ext.store_cart.calls.cartShippingMethodsWithUpdate.init();
-			app.model.dispatchThis('immutable');"  />
-	</div>
-
 	<ul class='noPadOrMargin listStyleNone cartShipMethods' data-bind='var: cart(@SHIPMETHODS); format:shipMethodsAsRadioButtons; extension:store_cart;'></ul>
 </section>
 
-<section class='marginBottom'>
+<section class='marginTop'>
 
-	
+	<div class='cartZipCodeContainer'>
+	<label for='data-ship_zip'>Zip/Postal Code:</label>
+	<input type='text' size='6'  name='ship/postal' id='data-ship_zip' value='' data-bind='var: cart(ship/postal); format:popVal;' maxlength='10' onChange="app.calls.cartSet.init({'ship/postal':this.value, 'ship/region':''});
+	app.ext.store_cart.u.updateCartSummary();
+	app.ext.store_cart.calls.cartShippingMethodsWithUpdate.init();
+	app.model.dispatchThis('immutable');"  />
+	</div>
+
+
+
+	<!-- some buttons that are alternatives to checkout. fewer is better -->
+	<menu class='cartAltButtonsContainer noPadOrMargin'>
+	<button class='ui-button-text-only ui-button ui-state-default ui-corner-all continueShoppingButton' onClick="$('#modalCart').dialog('close');"><img src="images/ge10_continue_shopping.png"/></button>
+	</menu>
+
+	<div class='checkoutButtonsContainer'>
+
+		<span title='Proceed to Secure Checkout'>
+			<button class='checkoutButton ui-button ui-button-text ui-state-default ui-corner-all' onClick="showContent('checkout',{});"><img src="images/ge10_checkout.png" /></button>
+		</span> 
+		<span id='paypalECButton' data-bind='var: cart(cart/cartid); format:paypalECButton;'></span>
+
+		<span id='googleCheckoutButton' class='pointer' data-bind='var: cart(sum/items_total); format:googleCheckoutButton;'></span>
+
+		<span id='amazonCheckoutButton' class='pointer' data-bind='var: cart(cart/cartid); format:amazonCheckoutButton;'></span>
+
+	</div>
 
 </section>
 
 		</div>
-		<div class='ui-state-default cartButtons stdPadding clearfix'>
-			<!-- spans are set around the buttons so each element has one consitent tag type around it -->
-			<span class='continueShoppingSpan'><button class='ui-button-text-only ui-button ui-state-default ui-corner-all continueShoppingButton' onClick="$('#modalCart').dialog('close');"><span class="ui-button-text">Continue Shopping</span></button></span>
-	
-			<span id='inStoreCheckoutButton' title='proceed to secure checkout'><button class='ui-button ui-button-text-only ui-state-highlight ui-corner-all checkoutButton' onClick="showContent('checkout',{});"><span class="ui-button-text">Store Checkout</span></button></span>
-	
-			<span id='paypalECButton' data-bind='var: cart(cart/cartid); format:paypalECButton;'></span>
-	
-			<span id='googleCheckoutButton' class='pointer' data-bind='var: cart(sum/items_total); format:googleCheckoutButton;'></span>
-	
-			<span id='amazonCheckoutButton' class='pointer' data-bind='var: cart(cart/cartid); format:amazonCheckoutButton;'></span>
-	
+		<div class="cartIconLogos">
+			<img src="images/bbb_hor-115x50.gif"/>
+			<img src="images/logo_72dpi_100_200j.jpg"/>
 		</div>
-
+		<div class="clear"></div>
 	</div>
-</div>
+	</td>
+</tr>
+
+</table>
 </form>
 </div><!-- /cartTemplate -->
 
