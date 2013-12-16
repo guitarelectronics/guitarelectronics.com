@@ -412,6 +412,10 @@ h3 {
 }
 /***** CartTemplate CSS End *****/
 /***** CheckoutTemplate CSS Start *****/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #6B6B6B;
+}
 .placeOrderButton.ui-state-highlight.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only{
 	background:none;
 	border:none;
