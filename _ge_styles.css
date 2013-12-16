@@ -245,6 +245,7 @@ h3 {
 .topFooter a {
 	color:#ffffff;
 	padding:0px 2px;
+	text-decoration:none;
 }
 .topFooter a:hover {
 	text-decoration:underline;
