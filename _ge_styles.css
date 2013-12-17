@@ -280,6 +280,18 @@ h3 {
 	float:right;
 	width: 257px;
 }
+.homepageCatList {
+    display: inline;
+    list-style: none outside none;
+}
+.homepageCatList > li {
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+}
+.homepageCatList a {
+    padding: 0 9px;
+}
 .homepageBanners {
 	width: 530px; 
 	margin: 0 auto;

@@ -296,9 +296,19 @@ the homepageTemplate template is loaded into mainContentArea by default when the
 	<div class="homepageSectionLeft">
 		<img src="images/ge10_head-371x75.png"/>
 		<p class="ztxt">The Worlds #1 Source for Guitar Electronics Parts and Wiring Resources. Shop our huge selection of electronics, pickups, pots, switches, jacks, capacitors, wire and shielding supplies, accessories and more. All of the parts and supplies you need for your guitar repair job or custom guitar project. Only the highest quality guitar parts and products meet our standards so you can rest assured that you are getting the very best for your guitar or bass.</p>
-		<a class="marginBottom" href="#" onClick="return showContent('category',{'navcat':'.specials'})">View Quantity Discounts and other Specials</a>
+		<ul class="homepageCatList">
+			<li><a href="#" onClick="return showContent('category',{'navcat':'.electronic_parts'})">Electronics</a>|</li>
+			<li><a href="#" onClick="return showContent('category',{'navcat':'.guitar___bass_pickups'})">Pickups</a>|</li>
+			<li><a href="#" onClick="return showContent('category',{'navcat':'.parts___hardware'})">Hardware</a>|</li>
+			<li><a href="#" onClick="return showContent('category',{'navcat':'.picks___accessories'})">Accesories</a>|</li>
+			<li><a href="#" onClick="return showContent('category',{'navcat':'.0_guitar_part_brands'})">Browse by Brand</a></li>
+		</ul>
+		<div class="clear"></div>
+		<div class="homepageCatList">
+			<a href="#" onClick="return showContent('category',{'navcat':'.specials'})">View Quantity Discounts and other Specials</a>
+		</div>
 		<!-- Begin copied code from vStore-->
-		<div class="zbox marginBottom">
+		<div class="zbox marginBottom marginTop">
 			<div class="zbox_head"><img width="193" height="18" border="0" alt="" src="images/ge10_wiring-193x18.png"></div>
 			<div class="zbox_body" style="padding: 5px; min-height:135px;">
 				<!-- BANNER: BOX1 --><div style="float:left; margin:0 5px 0 0;"><a href="#" onClick="return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams'})" title="Guitar Wiring Diagram Archive &amp; Resources" id="BOX1_href">
