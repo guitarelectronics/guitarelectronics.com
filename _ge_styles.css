@@ -80,7 +80,7 @@ h3 {
 /***** Top Bar CSS Start *****/
 #topBar {
 	position: relative;
-	height: 138px;
+	height: 146px;
 	z-index:1;
 }
 .logoSection {
@@ -133,24 +133,22 @@ h3 {
 
 .topNav {
 	position:absolute; 
-	top:100px; 
+	top:99px; 
 	left:0px; 
 	width:100%; 
 	z-index:10; 
-	height:38px; 
-	background: url("images/ge_topnav_mid-1x38.gif") repeat-x;
+	height:48px; 
+	background: url("images/ge_topnav_mid-1x38.gif") repeat-x #6B6B6B;
 	border-radius:10px 10px 0px 0px;
 	text-align:center;
 }
 .mainNavContainer {
-	float:right;
-	width: 840px;
-	margin-top:5px;
+	margin:15px 13px 0px;
 }
 .mainNavContainer div {
 	font-weight: light;
 	text-decoration:none;
-	font-size:12px;
+	font-size:14px;
 	font-weight:bold;
 	color: 	#F0F5ee;
 	line-height: 22px;
@@ -164,10 +162,10 @@ h3 {
 }
 .mainNavContainer > div{float:left; position:relative;}
 .mainNavLine{
-	border-right: 2px solid #444444;
+	border-right: 2px solid #F0F5ee;
 	height: 24px;
 	margin-top:4px;
-	padding: 0px 6px;
+	padding: 0px 7px;
 }
 .lastNavOption{
 	padding:4px 0px 2px 6px;
