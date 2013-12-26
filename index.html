@@ -1247,7 +1247,11 @@ So the cart template should contain these two elements and the extension should 
 <form id='cartTemplateForm' action='#' onSubmit='return false'>
 <table class='cartContainer'>
 <tr>
+	<img src="images/free_shipping_banner.jpg"/>
+</tr>
+<tr>
 	<td class='cartStuffContainer'>
+	<h2 class='ui-widget-header ui-helper-clearfix ui-corner-all ui-header'>Cart Items</h2>
 	<ul id='cartStuffList' data-bind="var: cart(@ITEMS); format:stuffList; loadsTemplate:productListTemplateCart;" class='listStyleNone fluidList clearfix noPadOrMargin productList lineItemProdlist'></ul>
 	</td>
 
