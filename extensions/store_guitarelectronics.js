@@ -155,13 +155,43 @@ var store_guitarelectronics = function() {
 //on a data-bind, format: is equal to a renderformat. extension: tells the rendering engine where to look for the renderFormat.
 //that way, two render formats named the same (but in different extensions) don't overwrite each other.
 		renderFormats : {
+			shipInfoMiniCart : function($tag,data)	{
+				$tag.empty();
+				var o = '';
+//				app.u.dump('BEGIN app.renderFormats.shipInfo. (formats shipping for minicart)');
+//				app.u.dump(data);
+				var L = app.data.cartDetail['@SHIPMETHODS'].length;
+				for(var i = 0; i < L; i += 1)	{
+//					app.u.dump(' -> method '+i+' = '+app.data.cartShippingMethods['@methods'][i].id);
+					if(app.data.cartDetail['@SHIPMETHODS'][i].id == data.value)	{
+						var pretty = app.u.isSet(app.data.cartDetail['@SHIPMETHODS'][i]['pretty']) ? app.data.cartDetail['@SHIPMETHODS'][i]['pretty'] : app.data.cartDetail['@SHIPMETHODS'][i]['name'];  //sometimes pretty isn't set. also, ie didn't like .pretty, but worked fine once ['pretty'] was used.
 
+//only show amount if not blank.
+// * 201324 -> bug fix: amount not showing up if zero. feature: support for zeroText for zero amounts (ex: zeroText: Free!;)
+						if(Number(app.data.cartDetail['@SHIPMETHODS'][i].amount) >= 0)	{
+							o += "<span class='orderShipAmount'>";
+							o += (data.bindData.zeroText) ? data.bindData.zeroText : app.u.formatMoney(app.data.cartDetail['@SHIPMETHODS'][i].amount,' $',2,false);
+							o += "<\/span>"
+							}
+						else	{} //amount is undefined.
+						break; //once we hit a match, no need to continue. at this time, only one ship method/price is available.
+						}
+					}
+				$tag.html(o);
+				}
 			}, //renderFormats
 ////////////////////////////////////   UTIL [u]   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 //utilities are typically functions that are exected by an event or action.
 //any functions that are recycled should be here.
 		u : {
+			updateSideBarMiniCart : function(){
+				var ts = app.data.cartDetail.ts;
+				var $miniCart = $('#miniCart');
+				if(!$miniCart.data('ts') || ts > $miniCart.data('ts')){
+					$miniCart.empty().data('ts',ts).anycontent({'templateID':'miniCartTemplate','datapointer':'cartDetail'});
+					}
+				}
 			}, //u [utilities]
 
 //app-events are added to an element through data-app-event="extensionName|functionName"

@@ -221,6 +221,47 @@ h3 {
 #sidebarRight img {
     margin-bottom: 4px;
 }
+#miniCart img{
+	margin:0px;
+}
+.miniCart {
+    background: url("images/ge_leftbox_bot-155x10.gif") no-repeat scroll center bottom #FFFFFF;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 155px;
+}
+.miniCartProdlist li {
+    height: auto;
+    margin: 0;
+    padding: 5px;
+    width: 145px;
+		font-size:10px;
+	font-family:Arial,​Verdana,​Helvetica,​sans-serif;
+}
+.miniCartImage{float:left; width:45;}
+.miniCartText {float:right; width:95px; text-align:left;}
+.miniCartProdName{
+	font-weight:bold;
+	color:#666666;
+}
+.miniCartSku .stid {
+    color: #F92911;
+    text-decoration: underline;
+}
+.miniCartProdlist .qtyInput.numberInput {
+    width: 15px;
+}
+.miniCartTotals {
+	color: #000000;
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+	padding:2px 5px;
+	border-bottom:1px solid #CCCCCC;
+}
+.miniCartLinks{
+	margin-top:2px;
+	font-family:Arial,​Verdana,​Helvetica,​sans-serif;
+}
 /***** Sidebar Right CSS End *****/
 
 

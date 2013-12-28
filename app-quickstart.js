@@ -3125,6 +3125,7 @@ else	{
 				$('.cartSubtotal',$appView).text(app.u.formatMoney(subtotal,'$',2,false));
 				$('.cartTotal',$appView).text(app.u.formatMoney(total,'$',2,false));
 
+				app.ext.store_guitarelectronics.u.updateSideBarMiniCart();
 				//no error for cart data not being present. It's a passive function.
 				return r;
 				},

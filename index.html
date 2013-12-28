@@ -207,6 +207,7 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 			<div id='mainContentArea'></div><!-- DO NOT REMOVE - this is where the specific page (ex: homepage, product, category) content is going to go -->
 		</div>
 		<div id="sidebarRight" class="displayNone">
+			<div id="miniCart"></div>
 			<a href="#" onClick="return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams.custom_guitar_wiring_diagrams'});"><img src="images/guitar_and_bass_custom_drawn_wiring_diagrams.jpg"/></a>
 			<a href="#" onClick="return showContent('category',{'navcat':'.electronic_parts.pots.pmt_guitar___bass_controls'});"><img src="images/pmt_side_banner.jpg"/></a>
 			<a href="#" onClick="return showContent('category',{'navcat':'.picks___accessories.shirts___hats'});"><img src="images/guitar_parts_free_shipping_with_shirts_or_hats.jpg"/></a>
@@ -1316,11 +1317,6 @@ So the cart template should contain these two elements and the extension should 
 </section>
 
 		</div>
-		<div class="cartIconLogos">
-			<img src="images/bbb_hor-115x50.gif"/>
-			<img src="images/logo_72dpi_100_200j.jpg"/>
-		</div>
-		<div class="clear"></div>
 	</div>
 	</td>
 </tr>
@@ -1329,7 +1325,20 @@ So the cart template should contain these two elements and the extension should 
 </form>
 </div><!-- /cartTemplate -->
 
-
+<div id="miniCartTemplate">
+	<img width="155" height="30" src="images/ge_tit_yourcart-155x29.png" />
+	<div class="miniCart">
+		<ul id='cartStuffList' data-bind="var: cart(@ITEMS); format:stuffList; loadsTemplate:productListTemplateMiniCart;" class='listStyleNone fluidList clearfix noPadOrMargin miniCartProdlist'></ul>
+		<div class="miniCartTotals">
+			<div class="alignLeft"><span class="cartItemCount"></span> Items <span class="floatRight" data-bind="var: cart(sum/items_total); format:money; className:orderSubtotal; hideZero:false; currencySign: $;"></span></div>
+			<div class="alignLeft">Shipping: <span class="floatRight" data-bind='var: cart(want/shipping_id); format:shipInfoMiniCart; className:orderShipping; hideZero:false; extension:store_guitarelectronics;'>$.00</span></div>
+			<div class="alignLeft">Total: <span class="floatRight" data-bind='var: cart(sum/order_total); format:money; className:orderTotal; hideZero:false; currencySign: $;'></span></div>
+		</div>
+		<div class="miniCartLinks">
+			<a class="pointer"  onClick="return showContent('cart',{});">View Cart </a>|<a class="pointer"  onClick="return showContent('checkout',{});"> Checkout</a>
+		</div>
+	</div>
+</div>
 
 
 
@@ -1351,6 +1360,26 @@ So the cart template should contain these two elements and the extension should 
 
 		<div>
 		qty: <input type='number' class='qtyInput numberInput' onChange="app.ext.store_cart.u.updateCartQty($(this)); app.model.dispatchThis('immutable');"  data-bind='format:cartItemQty;extension:store_cart;useParentData:true;' />
+		<button class='displayNone'>update</button><!-- here to stop 'enter' in input above from closing modal -->
+		<span data-bind='var: product(price); format:money; currencySign: $;  hideZero:false; pretext: x ;' ></span>
+		<span data-bind='var: product(extended); format:money; currencySign: $; hideZero:false; pretext: = ;'></span>
+
+		</div>
+
+		<div class='ztable_row_small prodOptions' data-bind='var: variations(%options); format:selectedOptionsDisplay;'></div>
+	</li>
+	
+	<li id='productListTemplateMiniCart' class='padMargBorderBottom clearfix'>
+
+		<div class='miniCartImage'><img src='blank.gif' class='prodThumb' alt='' data-bind='var: product(zoovy:prod_image1); defaultVar: product(%attribs.zoovy:prod_image1); format:imageURL;' width='45' height='45' /></div>
+		<div class="miniCartText">
+		<h4 class="miniCartProdName" data-bind='var: product(prod_name); format:text; '></h4>
+		<div class="miniCartSku">Sku: <span class='pointer' onClick="showContent('product',{'pid':$(this).attr('data-pid')})" data-bind='var:product(product);format:assignAttribute; attribute:data-pid;'><span class='ztable_row_small stid' data-bind='var: product(sku); format:text; className: stid;'></span></span></div>
+		</div>
+		<div class="clear"></div>
+		
+		<div>
+		Qty: <input type='number' class='qtyInput numberInput' onChange="app.ext.store_cart.u.updateCartQty($(this)); app.model.dispatchThis('immutable');"  data-bind='format:cartItemQty;extension:store_cart;useParentData:true;' />
 		<button class='displayNone'>update</button><!-- here to stop 'enter' in input above from closing modal -->
 		<span data-bind='var: product(price); format:money; currencySign: $;  hideZero:false; pretext: x ;' ></span>
 		<span data-bind='var: product(extended); format:money; currencySign: $; hideZero:false; pretext: = ;'></span>
