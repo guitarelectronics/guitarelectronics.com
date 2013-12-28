@@ -1253,7 +1253,7 @@ So the cart template should contain these two elements and the extension should 
 <tr>
 	<td class='cartStuffContainer'>
 	<h2 class='ui-widget-header ui-helper-clearfix ui-corner-all ui-header'>Cart Items</h2>
-	<ul id='cartStuffList' data-bind="var: cart(@ITEMS); format:stuffList; loadsTemplate:productListTemplateCart;" class='listStyleNone fluidList clearfix noPadOrMargin productList lineItemProdlist'></ul>
+	<ul id='cartStuffList' data-bind="var: cart(@ITEMS); format:stuffList; loadsTemplate:productListTemplateCart;" class='listStyleNone clearfix fluidList noPadOrMargin productList lineItemProdlist cartProdlist'></ul>
 	</td>
 
 	<td class='cartSummaryTotalsContainer'>
@@ -1352,7 +1352,7 @@ So the cart template should contain these two elements and the extension should 
 		<button class='floatRight removeButton' data-bind='format:removeItemBtn; extension:store_cart; useParentData:true;' >Remove Item From Cart</button>
 		<button class='floatRight moveToWishlist marginRight' data-bind='format:moveToWishlistButton; extension:myRIA; useParentData:true;' >Move to Wishlist</button>
 
-		<div class='floatLeft'><img src='blank.gif' class='prodThumb' alt='' data-bind='var: product(zoovy:prod_image1); defaultVar: product(%attribs.zoovy:prod_image1); format:imageURL;' width='75' height='75' /></div>
+		<div class='floatLeft'><img src='blank.gif' class='prodThumb cartThumb' alt='' data-bind='var: product(zoovy:prod_image1); defaultVar: product(%attribs.zoovy:prod_image1); format:imageURL;' width='70' height='70' /></div>
 
 		<h4 data-bind='var: product(prod_name); format:text; '></h4>
 

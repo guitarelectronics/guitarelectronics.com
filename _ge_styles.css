@@ -451,6 +451,18 @@ h3 {
 /***** ProductTemplate CSS End *****/
 
 /***** CartTemplate CSS Start *****/
+.cartProdlist {
+    background: url("images/cartlistbg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.cartProdlist > li {
+    height: 72px;
+    margin: 0;
+    padding: 5px 0;
+	border-bottom:1px solid #CFCFCF;
+}
+.cartThumb{
+	margin: 0px 10px;
+}
 .ui-widget-header.ui-helper-clearfix.ui-corner-all.ui-header {
     font-size: 12px;
 }
