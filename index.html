@@ -1285,22 +1285,12 @@ So the cart template should contain these two elements and the extension should 
 <section class='marginTop'>
 
 	<!-- some buttons that are alternatives to checkout. fewer is better -->
-	<menu class='cartAltButtonsContainer noPadOrMargin'>
-	<button class='ui-button-text-only ui-button ui-state-default ui-corner-all continueShoppingButton' onClick="$('#modalCart').dialog('close');"><img src="images/ge10_continue_shopping.png"/></button>
-	</menu>
-
-	<div class='checkoutButtonsContainer'>
-
-		<span title='Proceed to Secure Checkout'>
-			<button class='checkoutButton ui-button ui-button-text ui-state-default ui-corner-all' onClick="showContent('checkout',{});"><img src="images/ge10_checkout.png" /></button>
-		</span> 
+	<menu class='cartAltButtonsContainer noPadOrMargin checkoutButtonsContainer'>
+		<span class='continueShoppingSpan'><button class='ui-button-text-only ui-button ui-state-default ui-corner-all continueShoppingButton' onClick="$('#modalCart').dialog('close');"><span class="ui-button-text">Shop More</span></button></span>
+		<span id='inStoreCheckoutButton' title='proceed to secure checkout'><button class='ui-button ui-button-text-only ui-state-highlight ui-corner-all checkoutButton' onClick="showContent('checkout',{});"><span class="ui-button-text">Checkout</span></button></span>
+		
 		<span id='paypalECButton' data-bind='var: cart(cart/cartid); format:paypalECButton;'></span>
-
-		<span id='googleCheckoutButton' class='pointer' data-bind='var: cart(sum/items_total); format:googleCheckoutButton;'></span>
-
-		<span id='amazonCheckoutButton' class='pointer' data-bind='var: cart(cart/cartid); format:amazonCheckoutButton;'></span>
-
-	</div>
+	</menu>
 
 </section>
 

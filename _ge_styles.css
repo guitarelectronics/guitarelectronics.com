@@ -451,6 +451,8 @@ h3 {
 /***** ProductTemplate CSS End *****/
 
 /***** CartTemplate CSS Start *****/
+.cartStuffContainer{width:54%;}
+.cartSummaryTotalsContainer{width:1%; min-width:450px;}
 .cartProdlist {
     background: url("images/cartlistbg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
@@ -463,16 +465,35 @@ h3 {
 .cartThumb{
 	margin: 0px 10px;
 }
+.cartSummaryTotalsContainer .cartSummaryContainer{padding:7px;}
+.checkoutButtonsContainer > span {margin:0px 5px 5px 0px;}
 .ui-widget-header.ui-helper-clearfix.ui-corner-all.ui-header {
     font-size: 12px;
 }
-.ui-button-text-only.ui-button.ui-state-default.ui-corner-all.continueShoppingButton{
-	background:none;
-	border:none;
+.ui-button-text-only.ui-button.ui-state-default.ui-corner-all.continueShoppingButton {
+    background: url("images/redbtn_bg.jpg") repeat-x scroll 0 0 #561e1e;
+    color: #FFFFFF;
+	border:1px solid #561E1E;
+	border-radius:14px;
+	width:140px;
 }
-.checkoutButton.ui-button.ui-button-text.ui-state-default.ui-corner-all{
-	background:none;
-	border:none;
+.continueShoppingButton .ui-button-text {
+    font-size: 16px;
+	font-weight:bold;
+    line-height: 24px;
+    padding: 0px;
+}
+.ui-button.ui-button-text-only.ui-state-highlight.ui-corner-all.checkoutButton {
+    background: url("images/greenbtn_bg.jpg") repeat-x scroll 0 0 #25572A;
+    color: #FFFFFF;
+	border:1px solid #25572A;
+	border-radius:14px;
+	width:130px;
+}
+.checkoutButton .ui-button-text {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px;
 }
 /***** CartTemplate CSS End *****/
 /***** CheckoutTemplate CSS Start *****/
