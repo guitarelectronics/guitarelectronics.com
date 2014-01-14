@@ -420,6 +420,9 @@ h3 {
 .prodViewerContainer .prodThumbs div {
 	margin: 5px 0px 0px;
 }
+.prodSummaryContainer .policyPageTitle h1 {
+    font-size: 16px;
+}
 .ui-button.ui-button-text.ui-corner-all.ui-state-default.addToCartButton {
     background: url("images/ge10_add_to_cart.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: medium none;
