@@ -63,6 +63,11 @@ var store_guitarelectronics = function() {
 					var $context = $(app.u.jqSelector('#',P.parentID));	
 					$('#sidebarRight').hide();
 					$('.contentArea').css({"width":"962px"});
+					$('.footerButtons').hide();
+				}]);
+				
+				app.rq.push(['templateFunction', 'checkoutTemplate','onDeparts',function(P) {
+					$('.footerButtons').show();
 				}]);
 				
 				app.rq.push(['templateFunction', 'companyTemplate','onCompletes',function(P) {
