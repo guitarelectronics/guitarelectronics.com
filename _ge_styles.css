@@ -435,7 +435,7 @@ h3 {
 .prodMfg .underline {
     color: #F92911;
 }
-.prodMSRP span {
+.prodMSRP {
     padding-left: 3px;
     text-decoration: line-through;
 }

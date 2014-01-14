@@ -662,7 +662,7 @@ this will likely become more flexible in the future. ###
 	</hgroup>
 
 	<div class='priceContainer ztxt marginBottom'>
-		<div class='prodMSRP' data-bind='var: product(zoovy:prod_msrp); format:money; currencySign: $;  hideZero:true; pretext: Retail price: ;'></div>
+		<div>Retail price:<span class='prodMSRP' data-bind='var: product(zoovy:prod_msrp); format:money; currencySign: $;  hideZero:true;'></span></div>
 		<div class='basePrice ' data-bind='var: product(zoovy:base_price); format:money; currencySign: $;  hideZero:true; pretext: Our low price: ;'></div>
 		<span class='savings'>
 			<span class='savingsDifference' data-bind='var: product(pid); format:priceRetailSavingsDifference; extension:myRIA; pretext: You save: ;'></span>
