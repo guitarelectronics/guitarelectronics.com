@@ -423,6 +423,7 @@ h3 {
 .prodSummaryContainer .policyPageTitle h1 {
     font-size: 16px;
 }
+.ztitle.prodPrice {font-size:13px;}
 .ui-button.ui-button-text.ui-corner-all.ui-state-default.addToCartButton {
     background: url("images/ge10_add_to_cart.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: medium none;
