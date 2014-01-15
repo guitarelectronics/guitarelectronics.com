@@ -677,7 +677,11 @@ this will likely become more flexible in the future. ###
 	<menu data-bind='var:product(pid);format:assignAttribute; attribute:data-pid;' class='CRMButtonMenu'>
 
 	</menu>
-
+	
+	<div class='prodlistRelatedContainer marginTop'>
+		<ul class='listStyleNone fluidList clearfix noPadOrMargin productList' data-bind="var: product(zoovy:related_products); format:productList; extension:store_prodlist;loadsTemplate:productListTemplate;hide_pagination:true;hide_summary:true; before:<h2>Related Items</h2>; withReviews:1;"></ul>
+	</div>
+	
 	</td>
 </tr>
 <!-- Taking out tabs for time being
@@ -739,9 +743,7 @@ It's done this way because ID's hard coded into template are bad mojo (templates
 </tr>
 --->
 </table>
-<div class='prodlistRelatedContainer marginTop'>
-	<ul class='listStyleNone fluidList clearfix noPadOrMargin productList' data-bind="var: product(zoovy:related_products); format:productList; extension:store_prodlist;loadsTemplate:productListTemplate;hide_pagination:true;hide_summary:true; before:<h2>Related Items</h2>; withReviews:1;"></ul>
-</div>
+
 
 
 </div><!-- productTemplate -->
