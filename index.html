@@ -412,7 +412,18 @@ don't modify the 'data-templateid' unless you are changing template names and up
 </div>
 
 
+<div id='categoryTemplateWiringDiagram' class='loadingBG categoryTemplate categoryTemplateWiring'>
+	<div class="policyPageTitle">
+		<h1 data-bind="var:category(pretty); format:text;"></h1>
+	</div>
+	<ul class='breadcrumb clearfix noPadOrMargin fluidList' data-bind='var: category(path); format:breadcrumb; extension:store_navcats; loadsTemplate: breadcrumbTemplate;'></ul>
 
+	<p class="ztxt" data-bind="var: category(%page.description); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
+
+	<div class="displayNone marginBottom" data-bind="var: category(@subcategoryDetail); format:showIfSet;">
+		<ul data-bind="var: category(@subcategoryDetail); format: categoryList; extension: store_navcats; loadsTemplate: categoryListTemplateWiringDiagram; detail:max;" class='listStyleNone fluidList clearfix noPadOrMargin categoryList categoryListWiringDiagrams'></ul><!-- outputs a list of subcategories -->
+	</div>
+</div>
 
 
 
@@ -424,6 +435,11 @@ don't modify the 'data-templateid' unless you are changing template names and up
 		<div class='thumbContainer'><img src='blank.gif' class='catThumb' alt='' data-bind='var: category(%meta.CAT_THUMB); format:imageURL;' width='100' height='100' /></div>
 		<div class='catName white2LGray'><span data-bind='var: category(pretty); format:catText; extension: myRIA;'></span></div>
 	</div>
+</li>
+
+<li id='categoryListTemplateWiringDiagram'>
+	<div class='catName catNameWiringDiagram white2LGray'><span data-bind='var: category(pretty); format:catText; extension: myRIA;'></span></div>
+	<ul data-bind="var: category(@products); format: productList; editor: finder; extension: store_prodlist; loadsTemplate: productListTemplateWiringDiagram; withReviews:1; withInventory:1; withVariations:1; items_per_page: 500;" class='listStyleNone fluidList clearfix noPadOrMargin productListWiringDiagram'></ul>
 </li>
 
 
@@ -462,6 +478,13 @@ remember to NOT put the button inside the 'onclick' container or two events will
 		<button class="addToCartBtn" data-bind='format:addToCartButton; extension:myRIA; useParentData:true;'>More Details</button>
 	</form>
 	
+</li>
+
+<li id='productListTemplateWiringDiagram' class='loadingBG ' onMouseOver="$('.quickView',$(this)).show();" onMouseOut="$('.quickView').hide();" >
+	<div onClick="showContent('product',{'pid':$(this).attr('data-pid')})" data-bind='var:product(pid);format:assignAttribute; attribute:data-pid;' class='pointer'>
+		<div class="ztxt prodListName" data-bind='var: product(zoovy:prod_name); format:text;'></div>
+		<div class="ztxt" data-bind='var: product(zoovy:prod_desc); format:text;'></div>
+	</div>
 </li>
 
 

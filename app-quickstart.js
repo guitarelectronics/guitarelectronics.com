@@ -2783,6 +2783,9 @@ buyer to 'take with them' as they move between  pages.
 					else if(catSafeID == zGlobals.appSettings.rootcat || infoObj.pageType == 'homepage')	{
 						infoObj.templateID = 'homepageTemplate'
 						}
+					else if(catSafeID == '.wiring_resources_guitar_wiring_diagrams.1_pickup_guitar_wiring_diagrams'){
+						infoObj.templateID = 'categoryTemplateWiringDiagram';
+						}
 					else	{
 						infoObj.templateID = 'categoryTemplate'
 						}

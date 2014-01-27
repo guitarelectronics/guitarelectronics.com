@@ -379,6 +379,32 @@ h2 {color:#666666; font-size:15px;}
 }
 /***** Category Page CSS End *****/
 
+/***** Wiring Category Page CSS Start *****/
+.categoryTemplateWiring .categoryList {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+.categoryListWiringDiagrams > li{
+	width:100%;
+	height:100%;
+	margin:0px;
+}
+.catNameWiringDiagram{
+	background: url("images/ge10_head-1x32.png") repeat-x center top;
+	padding:6px 10px;
+	font-size:11px;
+	color:#ffffff;
+}
+.productListWiringDiagram > li{
+	margin: 3px 5px;
+}
+.productListWiringDiagram .prodListName {
+	font-weight:bold;
+	font-size:13px;
+}
+/***** Wiring Category Page CSS End *****/
+
 
 /***** ProdListTemplate CSS Start *****/
 .productList > li {
