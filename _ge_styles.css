@@ -81,7 +81,7 @@ h3 {
 /***** Top Bar CSS Start *****/
 #topBar {
 	position: relative;
-	height: 146px;
+	height: 144px;
 	z-index:1;
 }
 .logoSection {
@@ -93,6 +93,7 @@ h3 {
 .headerBarLinks {
 	width:400px;
 	float:right;
+	margin-top:3px;
 }
 .headerBarLinks > ul {
     float: left;
@@ -122,34 +123,34 @@ h3 {
 .topBarCart img {
     padding: 1px 5px 0 35px;
 }
-.productSearchForm {margin:6px 0px 0px;}
+.productSearchForm {margin-top:25px;}
 .searchBar {
 	width: 240px;
 	height:20px;
-	border:2px solid #6b6b6b;
+	border:1px solid #6b6b6b;
 }
 .searchBtn {
-	background: none repeat scroll 0 0 #222222;
-    border: 1px solid #6B6B6B;
+	background: none repeat scroll 0 0 #6B6B6B;
+    border: 1px solid #555555;
     border-radius: 5px;
     color: #FFFFFF;
     font-weight: bold;
-    height: 26px;
+    height: 25px;
 }
 
 .topNav {
 	position:absolute; 
-	top:99px; 
+	top:92px; 
 	left:0px; 
 	width:100%; 
 	z-index:10; 
-	height:48px; 
+	height:52px; 
 	background: url("images/ge_topnav_mid-1x38.gif") repeat-x #6B6B6B;
 	border-radius:10px 10px 0px 0px;
 	text-align:center;
 }
 .mainNavContainer {
-	margin:15px 13px 0px;
+	margin:20px 13px 0px;
 }
 .mainNavContainer div {
 	font-weight: light;
