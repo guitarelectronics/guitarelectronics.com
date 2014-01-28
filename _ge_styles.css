@@ -1,5 +1,5 @@
 body {
-	background: url("images/ge_body_bg-297x415.gif");
+	background: #E5E5E5;
 	font-family: Verdana,Arial,Helvetica,sans-serif;
 	color: #696969;
 	font-size:12px;
@@ -91,12 +91,12 @@ h3 {
 	z-index:40;
 }
 .headerBarLinks {
-	width:350px;
+	width:400px;
 	float:right;
 }
 .headerBarLinks > ul {
     float: left;
-    color: #FFFFFF;
+    color: #3990FA;
 	font-size: 10px;
 	margin: 5px 0px;
 	padding:0px;
@@ -106,16 +106,21 @@ h3 {
     padding: 0 3px;
 }
 .headerBarLinks a {
-    color: #FFFFFF;
+    color: #3990FA;
     text-decoration: none;
 	font-family: Tahoma,Arial,Helvetica,sans-serif;
-    font-size: 10px;
+    font-size: 11px;
+	font-weight:bold;
 }
 .headerBarLinks a:hover {
 	text-decoration:underline;
 }
-.topBarCartImg {
-    padding: 6px 5px 0 40px;
+.topBarCart {
+	display:block;
+	margin:5px 0px;
+}
+.topBarCart img {
+    padding: 1px 5px 0 35px;
 }
 .productSearchForm {margin:6px 0px 0px;}
 .searchBar {
