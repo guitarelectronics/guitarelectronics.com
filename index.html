@@ -1363,10 +1363,12 @@ So the cart template should contain these two elements and the extension should 
 	
 	<li id='productListTemplateMiniCart' class='padMargBorderBottom clearfix'>
 
-		<div class='miniCartImage'><img src='blank.gif' class='prodThumb' alt='' data-bind='var: product(zoovy:prod_image1); defaultVar: product(%attribs.zoovy:prod_image1); format:imageURL;' width='45' height='45' /></div>
-		<div class="miniCartText">
-		<h4 class="miniCartProdName" data-bind='var: product(prod_name); format:text; '></h4>
-		<div class="miniCartSku">Sku: <span class='pointer' onClick="showContent('product',{'pid':$(this).attr('data-pid')})" data-bind='var:product(product);format:assignAttribute; attribute:data-pid;'><span class='ztable_row_small stid' data-bind='var: product(sku); format:text; className: stid;'></span></span></div>
+		<div class='pointer' onClick="showContent('product',{'pid':$(this).attr('data-pid')})" data-bind='var:product(product);format:assignAttribute; attribute:data-pid;'>
+			<div class='miniCartImage'><img src='blank.gif' class='prodThumb' alt='' data-bind='var: product(zoovy:prod_image1); defaultVar: product(%attribs.zoovy:prod_image1); format:imageURL;' width='45' height='45' /></div>
+			<div class="miniCartText">
+			<h4 class="miniCartProdName" data-bind='var: product(prod_name); format:text; '></h4>
+			<div class="miniCartSku">Sku: <span class='ztable_row_small stid' data-bind='var: product(sku); format:text; className: stid;'></span></div>
+			</div>
 		</div>
 		<div class="clear"></div>
 		
