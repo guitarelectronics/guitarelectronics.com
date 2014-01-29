@@ -350,7 +350,7 @@ h3 {
 }
 .policyPageTitle {
 	margin-bottom:10px; 
-	border-bottom:2px solid #990000; 
+	border-bottom:2px solid #1a74e2; 
 	text-align:left;
 }
 .policyPageTitle h1 {
@@ -358,7 +358,7 @@ h3 {
 	font-style:italic; 
 	font-weight:bold; 
 	margin:0px 1px 1px 0px; 
-	color:#333333;
+	color:#444444;
 }
 .sideline {
 	border:1px solid #444444;
