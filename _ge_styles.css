@@ -14,7 +14,7 @@ body {
 	display:none;
 }
 a {
-	color: #3990FA;
+	color: #00458a;
 }
 h3 {
     color: #666666;
@@ -167,7 +167,7 @@ h3 {
 	line-height: 22px;
 	}
 .mainNavContainer div:hover	{
-	color: #3990FA;
+	color: #00458a;
 	}
 .mainNavContainer .mainNavLinks{
 	display:block;
@@ -258,7 +258,7 @@ h3 {
 	color:#666666;
 }
 .miniCartSku .stid {
-    color: #3990FA;
+    color: #00458a;
     text-decoration: underline;
 }
 .miniCartProdlist .qtyInput.numberInput {
@@ -356,7 +356,7 @@ h3 {
 }
 .policyPageTitle {
 	margin-bottom:10px; 
-	border-bottom:2px solid #1a74e2; 
+	border-bottom:2px solid #00458a; 
 	text-align:left;
 }
 .policyPageTitle h1 {
@@ -434,7 +434,7 @@ h2 {color:#666666; font-size:15px;}
 	padding:2px;
 }
 .prodListName {
-	color:#3990FA;
+	color:#00458a;
 	font-weight:bold;
 }
 .ztxt.price {
@@ -479,7 +479,7 @@ h2 {color:#666666; font-size:15px;}
     width: 145px;
 }
 .prodMfg .underline {
-    color: #3990FA;
+    color: #00458a;
 }
 .prodMSRP {
     padding-left: 3px;
