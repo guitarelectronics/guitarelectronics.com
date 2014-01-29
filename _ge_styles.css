@@ -128,11 +128,12 @@ h3 {
 .searchBar {
 	width: 240px;
 	height:20px;
-	border:1px solid #6b6b6b;
+	padding: 1px 3px;
+	border:1px solid #000000;
 }
 .searchBtn {
-	background: none repeat scroll 0 0 #6B6B6B;
-    border: 1px solid #555555;
+	background: none repeat scroll 0 0 #000000;
+    border: none;
     border-radius: 5px;
     color: #FFFFFF;
     font-weight: bold;
