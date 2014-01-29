@@ -62,7 +62,7 @@ h3 {
 /***** appPreView CSS Start *****/
 #appPreView {
     background: none repeat scroll 0 0 #FFFFFF;
-    border: 2px solid #6B6B6B;
+    border: 1px solid #000000;
     border-radius: 12px;
     color: #333333;
     margin: 10px auto;
@@ -75,6 +75,10 @@ h3 {
 }
 #appPreView #loader {
 	text-align:center;
+}
+#loader h3 {
+    color: #333333;
+    margin-bottom: 5px;
 }
 /***** appPreView CSS End *****/
 
