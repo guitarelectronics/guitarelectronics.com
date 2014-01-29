@@ -420,7 +420,7 @@ don't modify the 'data-templateid' unless you are changing template names and up
 
 	<p class="ztxt" data-bind="var: category(%page.description); format:wiki; wikiFormats:myRIA; editor: textarea;"></p>
 
-	<div class="displayNone marginBottom" data-bind="var: category(@subcategoryDetail); format:showIfSet;">
+	<div class="displayNone" data-bind="var: category(@subcategoryDetail); format:showIfSet;">
 		<ul data-bind="var: category(@subcategoryDetail); format: categoryList; extension: store_navcats; loadsTemplate: categoryListTemplateWiringDiagram; detail:max;" class='listStyleNone fluidList clearfix noPadOrMargin categoryList categoryListWiringDiagrams'></ul><!-- outputs a list of subcategories -->
 	</div>
 </div>

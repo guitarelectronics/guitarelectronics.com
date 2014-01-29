@@ -408,11 +408,17 @@ h2 {color:#666666; font-size:15px;}
 	font-size:11px;
 	color:#ffffff;
 }
+.productListWiringDiagram {
+    padding-bottom: 10px;
+}
 .productListWiringDiagram > li{
 	margin: 3px 5px;
 }
 .productListWiringDiagram .prodListName {
 	font-size:13px;
+}
+.productListWiringDiagram .prodListName:hover {
+    text-decoration: underline;
 }
 /***** Wiring Category Page CSS End *****/
 
