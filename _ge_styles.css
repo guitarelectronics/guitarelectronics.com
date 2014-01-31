@@ -499,10 +499,75 @@ h2 {color:#666666; font-size:15px;}
 }
 .prodlistRelatedContainer h2{
 	background:#efefef;
-	color:#000000;
+	color:#414141;
 	padding:4px 10px;
 }
 /***** ProductTemplate CSS End *****/
+
+
+/***** ProductTemplateDiagram CSS Start *****/
+.diagramPageTopRightImg{
+	width:150px;
+	margin-left:20px;
+	float:right;
+}
+.diagramPage .policyPageTitle {
+    width: 485px;
+}
+.diagramPageContent{
+	margin-top:25px;
+}
+.diagramPageDesc {
+	width:525px;
+	float:left;
+}
+.diagramPageDesc h2 {
+    background: none repeat scroll 0 0 #EFEFEF;
+    color: #414141;
+    padding: 4px 10px;
+	width:250px;
+}
+.diagramPageDesc .ztxt {
+	padding-top:5px;
+}
+.diagramPage .prodThumbs img {
+    display: block;
+    margin: 0 auto;
+}
+.diagramPage .reviewSection {
+	position:relative;
+}
+.diagramPage .reviewSection a {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.diagramPage .reviewSection a:hover{
+	text-decoration:underline;
+}
+.diagramPage .productReviewsList {
+    margin: 5px 0px;
+    padding: 0px;
+}
+.diagramPage .productReviewsList h2 {
+    background: none;
+    padding: 0px;
+}
+.diagramPage .prodlistRelatedContainer{
+	width:260px;
+	float:right;
+}
+.diagramPage .prodlistRelatedContainer h2 {
+    width: 120px;
+}
+.diagramPage .diagramPageBorder {
+    border-top: 1px solid #CCCCCC;
+}
+.diagramPage .productList > li{
+	margin:5px 10px 5px 11px;
+}
+/***** ProductTemplateDiagram CSS End *****/
+
 
 /***** CartTemplate CSS Start *****/
 .cartStuffContainer{width:54%;}
