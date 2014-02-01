@@ -804,6 +804,22 @@ It's done this way because ID's hard coded into template are bad mojo (templates
 				<div onClick='app.ext.store_product.u.showPicsInModal({"pid":$(this).parent().attr("data-pid"),"int":"2"});' class='pointer'><img src='blank.gif' data-bind='var: product(zoovy:prod_image2); format:imageURL;' alt='' width='500' /></div>
 			</div>
 			
+			<div class="alignCenter marginBottom">
+				<a onClick="return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams.humbucker_wiring_color_codes'});">Humbucker Wire Color Codes</a>|
+				<a onClick="return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams.wiring_faqs.pickup_switch_cross_reference_diagrams'});">Pickup Switch Wiring Cross Reference</a>|
+				<a onClick="return showContent('category',{'navcat':'.wiring_resources_guitar_wiring_diagrams.wiring_faqs.pickup_and_mini_switch_terminal_diagrams'});">Switch Terminal Diagrams</a>
+			</div>
+			<div class="alignCenter marginBottom">
+				<a onClick="return showContent('category',{'navcat':'.electronic_parts.battery_accessories'});">Battery Accessories</a>|
+				<a onClick="return showContent('category',{'navcat':'.electronic_parts.guitar___bass_jacks'});">Guitar & Bass Jacks & Plugs</a>|
+				<a onClick="return showContent('category',{'navcat':'.electronic_parts.guitar___bass_preamps'});">Guitar & Bass Preamps</a>|
+				<a onClick="return showContent('category',{'navcat':'.electronic_parts.parts_kits'});">Guitar & Bass Parts Kits</a>|
+				<a onClick="return showContent('category',{'navcat':'.electronic_parts.pots'});">Pots-Volume Tone Blend</a>|
+				<a onClick="return showContent('category',{'navcat':'.electronic_parts.switches'});">Switches & Pickups Selectors</a>|
+				<a onClick="return showContent('category',{'navcat':'.electronic_parts.tone_capacitors'});">Tone Capacitors</a>|
+				<a onClick="return showContent('category',{'navcat':'.electronic_parts.wire___shielding'});">Wire & Shielding Supplies</a>
+			</div>
+			
 			<ul class='listStyleNone fluidList clearfix noPadOrMargin productList diagramPageBorder' data-bind="var: product(zoovy:accessory_products); format:productList; extension:store_prodlist;loadsTemplate:productListTemplate;hide_pagination:true;hide_summary:true; before:<h2>Wiring Supplies & Accessories</h2>; withReviews:1; withInventory:1; withVariations:1;"></ul>
 		
 			<div class="reviewSection">
