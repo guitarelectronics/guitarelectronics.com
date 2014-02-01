@@ -2235,7 +2235,7 @@ effects the display of the nav buttons only. should be run just after the handle
 					app.u.dump("ERROR! showProd had no infoObj.pid.  infoObj:"); app.u.dump(infoObj);
 					}
 				else	{
-					if(pid == "WD1H10_01"){
+					if(pid.indexOf("WD1H10_") == 0 || pid.indexOf("WD1H11_") == 0 || pid == "WD1H5L10_01" || pid == "WD1H5L11_01" || pid == "WD1H5R10_01" || pid == "WD1H5R11_01"){
 						infoObj.templateID = "productTemplateDiagram"
 						}
 					infoObj.templateID = infoObj.templateID || 'productTemplate';
