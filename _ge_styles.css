@@ -527,12 +527,15 @@ h2 {color:#666666; font-size:15px;}
     padding: 4px 10px;
 	width:250px;
 }
-.diagramPageDesc .ztxt {
-	padding-top:5px;
+.diagramPageDesc .ztxt.diagramPageBorder {
+	padding-top:3px;
 }
 .diagramPage .prodThumbs img {
     display: block;
     margin: 0 auto;
+}
+.diagramPageDesc a {
+	cursor:pointer;
 }
 .diagramPage .reviewSection {
 	position:relative;
