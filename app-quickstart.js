@@ -2238,6 +2238,9 @@ effects the display of the nav buttons only. should be run just after the handle
 					if(pid.indexOf("WD1H10_") == 0 || pid.indexOf("WD1H11_") == 0 || pid == "WD1H5L10_01" || pid == "WD1H5L11_01" || pid == "WD1H5R10_01" || pid == "WD1H5R11_01"){
 						infoObj.templateID = "productTemplateDiagram"
 						}
+					if(pid.indexOf("WD_CUSTOM")== 0){
+						infoObj.templateID ="productTemplateCustomDiagram"
+						}
 					infoObj.templateID = infoObj.templateID || 'productTemplate';
 					infoObj.state = 'onInits'
 					parentID = infoObj.templateID+"_"+app.u.makeSafeHTMLId(pid);
