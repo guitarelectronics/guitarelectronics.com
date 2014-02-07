@@ -233,8 +233,8 @@ app.u.loadScript(app.vars.baseURL+"app-quickstart-init.js");
 				<a href="#" onClick="return showContent('category',{'navcat':'.zzbannerslinktous'});">Our Banners</a>
 			</div>
 			<div class="footerButtons">
-				<a onClick="return showContent('cart',{});"><img src="images/ge_btn_viewcart-145x28.gif"/></a>
-				<a onClick="return showContent('checkout',{});"><img src="images/ge_btn_checkout-145x28.gif"/></a>
+				<span id='inStoreCheckoutButton' title='View Cart'><button class='ui-button ui-button-text-only ui-state-highlight ui-corner-all checkoutButton' onClick="showContent('cart',{});"><span class="ui-button-text">View Cart</span></button></span>
+				<span id='inStoreCheckoutButton' title='Proceed to Secure Checkout' class="marginRight"><button class='ui-button ui-button-text-only ui-state-highlight ui-corner-all checkoutButton' onClick="showContent('checkout',{});"><span class="ui-button-text">Checkout</span></button></span>
 			</div>
 		</div>
 		<div class="bottomFooter">

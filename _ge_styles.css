@@ -288,7 +288,7 @@ h3 {
 }
 .topFooter{
 	background: url("images/ge_footernav_bg-1x42.gif") repeat-x scroll center bottom #6B6B6B;
-	height:60px;
+	height:50px;
 	color:#ffffff;
 	font-size:12px;
 	font-weight:bold;
@@ -308,7 +308,7 @@ h3 {
 }
 .footerButtons {
 	float:right; 
-	padding:15px 8px;
+	padding:12px 8px;
 }
 .bottomFooter {
 	height:40px;
