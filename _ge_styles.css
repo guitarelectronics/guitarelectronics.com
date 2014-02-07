@@ -646,7 +646,6 @@ h2 {color:#666666; font-size:15px;}
     border: 1px solid #6B6B6B;
 }
 .placeOrderButton.ui-state-highlight.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only{
-	background:none;
-	border:none;
+	width:190px;
 }
 /***** CheckoutTemplate CSS End *****/
