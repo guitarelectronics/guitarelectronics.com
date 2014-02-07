@@ -432,7 +432,7 @@ h2 {color:#666666; font-size:15px;}
 
 /***** ProdListTemplate CSS Start *****/
 .productList > li {
-    height: 215px;
+    height: 230px;
     position: relative;
     width: 109px;
 }
@@ -452,6 +452,10 @@ h2 {color:#666666; font-size:15px;}
 }
 .ztxt.price {
     margin-top: 3px;
+}
+.productList a {
+	text-decoration:underline;
+	font-size:11px;
 }
 .productList .prodViewerAddToCartForm {
     bottom: 8px;
