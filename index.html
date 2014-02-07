@@ -882,6 +882,9 @@ It's done this way because ID's hard coded into template are bad mojo (templates
 			<span class='savingsPercentage' data-bind='var: product(pid); format:priceRetailSavingsPercentage; extension:myRIA; pretext: (; posttext:);'></span>
 		</span>
 	</div>
+	<div class="quickViewProdLink marginTop">
+		<a onClick="showContent('product',{'pid':$(this).attr('data-pid')})" data-bind='var:product(pid);format:assignAttribute; attribute:data-pid;' class='pointer'>View Full Product Specifications & Details</a>
+	</div>
 	</td>
 </tr>
 <tr>

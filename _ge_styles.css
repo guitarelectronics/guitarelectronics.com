@@ -516,6 +516,10 @@ h2 {color:#666666; font-size:15px;}
 	color:#414141;
 	padding:4px 10px;
 }
+.quickViewProdLink a{
+	color:#00458a;
+	text-decoration:underline;
+}
 /***** ProductTemplate CSS End *****/
 
 
