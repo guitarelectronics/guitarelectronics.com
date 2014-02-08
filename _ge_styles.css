@@ -524,16 +524,21 @@ h2 {color:#666666; font-size:15px;}
 
 
 /***** ProductTemplateDiagram CSS Start *****/
-.diagramPageTopRightImg{
-	width:150px;
-	margin-left:20px;
-	float:right;
+.diagramPage hgroup {
+    float: left;
+    width: 50%;
 }
-.diagramPage .policyPageTitle {
-    width: 485px;
+.diagramPageReviews{
+	width:50%;
+	float:right;
+	text-align:right;
+}
+.diagramPageReviews .numReviews {
+    display: block;
+    text-decoration: underline;
 }
 .diagramPageContent{
-	margin-top:25px;
+	margin-top:10px;
 }
 .diagramPageDesc {
 	width:525px;

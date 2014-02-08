@@ -855,9 +855,6 @@ It's done this way because ID's hard coded into template are bad mojo (templates
 	</td>
 	
 	<td class='prodSummaryContainer diagramPage marginBottom no_underline'>
-
-		<a class="pointer" onClick="return showContent('category',{'navcat':'.electronic_parts.pots.pmt_guitar___bass_controls'});"><img src="images/pmt_expansion_controls.jpg" class="diagramPageTopRightImg"></a>
-		
 		<div class="policyPageTitle">
 			<h1 data-bind='var: product(zoovy:prod_name); format:text;'></h1>
 		</div>	
@@ -866,6 +863,10 @@ It's done this way because ID's hard coded into template are bad mojo (templates
 			<div data-bind='var: product(zoovy:prod_mfgid); format:text; pretext: Item #: ;'></div>
 			<div class="prodMfg" data-bind='var: product(zoovy:prod_mfg); format:searchLink; extension:myRIA; pretext: Manufacturer: ;'></div>
 		</hgroup>
+		<a class="diagramPageReviews" onclick='app.ext.store_guitarelectronics.a.reviewScroll("reviewSection","class",$(this).parent());'>
+			<div data-bind='var: reviews(reviews.average); format:addClass; className:review_;' class='reviewSprite'></div>
+			<div data-bind='var: reviews(reviews.total); format:text; pretext: Ranked ;posttext: Times; className:numReviews;'></div>
+		</a>
 		<div class="clear"></div>
 	</td>
 </tr>

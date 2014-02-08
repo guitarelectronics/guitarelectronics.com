@@ -150,6 +150,12 @@ var store_guitarelectronics = function() {
 			hideDropDownOnSelect : function($tag){
 				this.hideDropDown($tag);
 				$tag.data('timeoutNoShow', setTimeout(function(){$tag.data('timeoutNoShow', 'false');}, 500));
+				},
+				
+			reviewScroll : function(name, type, $parent) {
+				var type = type == 'class' ? '.' : '#'; //is the element a class or an id
+				 
+				$('html,body').animate({ scrollTop: $(type + name,$parent).offset().top }, 'slow'); //scroll to it
 				}
 		
 			}, //Actions
