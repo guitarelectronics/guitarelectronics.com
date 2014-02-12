@@ -27,13 +27,10 @@ h3 {
     border: 1px solid #CCCCCC;
 }
 .zbox {
-    border: 1px solid #505050;
+    border: 1px solid #6b6b6b;
+	border-radius:8px 8px 0px 0px;
 }
 
-.zbox_head {
-    background: url("images/ge10_head-1x32.png") repeat-x scroll center top #000000;
-    padding: 6px 10px;
-}
 .zbox_body {
     background-color: #FFFFFF;
     color: #000000;
@@ -41,8 +38,11 @@ h3 {
     font-size: 10px;
 }
 .zbox_head {
-    background-color: #000000;
+    background-color: #B2B2B2;
+	border-bottom:1px solid #6b6b6b;
+	border-radius:7px 7px 0px 0px;
     color: #FFFFFF;
+    padding: 6px 10px;
     font-family: Arial,Verdana,Helvetica,sans-serif;
     font-size: 11px;
 }
