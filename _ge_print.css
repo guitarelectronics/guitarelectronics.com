@@ -1,0 +1,37 @@
+/***** Printable Page Start *****/
+.floatLeft {float:left;}
+.prodBigImage {
+    border: 1px solid #CCCCCC;
+	margin: 0px 10px 10px 0px;
+}
+.policyPageTitle {
+    border-bottom: 2px solid #00458A;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.policyPageTitle h1 {
+	font-size:16px; 
+	font-style:italic; 
+	font-weight:bold; 
+	margin:0px 1px 1px 0px; 
+	color:#444444;
+}
+.prodMfg .underline {
+    color: #00458A;
+}
+.diagramPageDesc {float:left;}
+.diagramPageDesc h2 {
+    background: none repeat scroll 0 0 #EFEFEF;
+    color: #414141;
+	font-size:15px;
+    padding: 4px 10px;
+	margin:0px;
+    width: 250px;
+}
+.diagramPageDesc .diagramPageBorder {
+    border-top:1px solid #cccccc;
+}
+.diagramPage .prodThumbs img {
+    display: block;
+    margin: 0 auto;
+}

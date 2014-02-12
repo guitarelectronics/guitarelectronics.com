@@ -864,12 +864,21 @@ It's done this way because ID's hard coded into template are bad mojo (templates
 		<hgroup>
 			<div data-bind='var: product(zoovy:prod_mfgid); format:text; pretext: Guitar Diagram #: ;'></div>
 			<div class="prodMfg" data-bind='var: product(zoovy:prod_mfg); format:searchLink; extension:myRIA; pretext: Designed By: ;'></div>
-			<div class="printLinkContainer displayNone">
-				<span href="#" onClick="app.u.printByjqObj($('.printerFriendly', $(this).parent())); return false;" >View printer friendly version</span>
-				<div class="displayNone printerFriendly">
+			<div class="printLinkContainer marginTop">
+				<a href="#" onClick="app.u.printByjqObj($('.printerFriendly', $(this).parent())); return false;" >View printer friendly version</a>
+				<div class="printerFriendly displayNone">
+					<img src='blank.gif' class='prodBigImage floatLeft' alt='' data-bind='var: product(zoovy:prod_image1); format:imageURL;' width='120' height='120'/>
+					<div class="policyPageTitle">
+						<h1 data-bind='var: product(zoovy:prod_name); format:text;'></h1>
+					</div>	
+					<div data-bind='var: product(zoovy:prod_mfgid); format:text; pretext: Guitar Diagram #: ;'></div>
+					<div class="prodMfg" data-bind='var: product(zoovy:prod_mfg); format:searchLink; extension:myRIA; pretext: Designed By: ;'></div>
 					<div class='diagramPageDesc'>
 						<h2>Specifications</h2>
 						<div class="ztxt diagramPageBorder" data-bind='var: product(zoovy:prod_desc); format:wiki; wikiFormats:myRIA;'></div>
+						<div data-bind='var:product(pid);format:assignAttribute; attribute:data-pid;' class='prodThumbs marginBottom'>
+							<div onClick='app.ext.store_product.u.showPicsInModal({"pid":$(this).parent().attr("data-pid"),"int":"2"});' class='pointer'><img src='blank.gif' data-bind='var: product(zoovy:prod_image2); format:imageURL;' alt='' width='500' /></div>
+						</div>
 					</div>
 				</div>
 			</div>
