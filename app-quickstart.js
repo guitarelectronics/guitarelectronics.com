@@ -2235,7 +2235,7 @@ effects the display of the nav buttons only. should be run just after the handle
 					app.u.dump("ERROR! showProd had no infoObj.pid.  infoObj:"); app.u.dump(infoObj);
 					}
 				else	{
-					if(pid.indexOf("WD1H10_") == 0 || pid.indexOf("WD1H11_") == 0 || pid == "WD1H5L10_01" || pid == "WD1H5L11_01" || pid == "WD1H5R10_01" || pid == "WD1H5R11_01"){
+					if(pid.indexOf("WD1H10_") == 0 || pid.indexOf("WD1H11_") == 0 || pid.indexOf("WD1H5L1") == 0 || pid.indexOf("WD1H5R1") == 0 || pid.indexOf("WD2HH3T") == 0 || pid.indexOf("WD2HH3L") == 0 || pid.indexOf("WD2HH5R") == 0 || pid.indexOf("WD2HH5L") == 0 || pid.indexOf("WDUS") == 0 || pid.indexOf("WDUH") == 0){
 						infoObj.templateID = "productTemplateDiagram"
 						}
 					if(pid.indexOf("WD_CUSTOM")== 0){
