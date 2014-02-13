@@ -437,14 +437,14 @@ h2 {color:#666666; font-size:15px;}
     width: 109px;
 }
 .quickView {
-	background:#ffffff;
-	color:#981b1e;
-	border:1px solid #6b6b6b;
+	background:url("images/greenbtn_bg.jpg") repeat-x #25572A;
+	color:#ffffff;
+	border:1px solid #25572A;
 	border-radius:4px;
 	font-size:12px;
 	font-style: italic;
 	font-weight:bold;
-	padding:2px;
+	padding:0px 4px 2px 0px;
 }
 .prodListName {
 	color:#00458a;
