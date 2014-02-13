@@ -463,10 +463,16 @@ h2 {color:#666666; font-size:15px;}
     position: absolute;
 }
 .addToCartBtn.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only {
-    background: url("images/ge_btn_add_4pl-87x18.gif") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    font-size: 0;
+    background: url("images/greenbtn_bg.jpg") repeat-x #25572A;
+	border:1px solid #25572a;
+	color:#ffffff;
+    font-size: 12px;
+	font-weight:bold;
     height: 23px;
     width: 90px;
+}
+.addToCartBtn .ui-button-text {
+    padding: 2px 2px 3px;
 }
 /***** ProdListTemplate CSS End *****/
 
