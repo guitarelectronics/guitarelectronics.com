@@ -189,6 +189,14 @@ var store_guitarelectronics = function() {
 						}
 					}
 				$tag.html(o);
+				},
+			checkIfLoggedOut : function($tag, data){
+				if(app.u.buyerIsAuthenticated()){
+					//do nothing
+					}
+				else {
+					$tag.prop('checked',true);
+					}
 				}
 			}, //renderFormats
 ////////////////////////////////////   UTIL [u]   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
