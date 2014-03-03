@@ -105,8 +105,37 @@ var myRIA = function() {
 //			app.u.dump("BEGIN myRIA.callback.startMyProgram");
 //			app.u.dump(" -> window.onpopstate: "+typeof window.onpopstate);
 //			app.u.dump(" -> window.history.pushState: "+typeof window.history.pushState);
-
+			
+			var cartID;
+			if(app.vars.cartID){
+				cartID = app.vars.cartID;
+				}
+			else if(cartID = app.u.getParameterByName('cartID')) {
+			
+				}
+			else if(cartID = app.model.fetchCartID()) {
 				
+				}
+			else {
+			
+				}
+			if(cartID){
+				app.model.addDispatchToQ({"_cmd":"appCartExists",_cartid:cartID,"_tag":{"datapointer":"appCartExists","cartid":cartID,"callback":function(rd){
+					if(app.data[rd.datapointer].exists){
+						  //cart is valid, all good
+						app.u.dump("this cart es okay");
+						}
+					else {
+						app.u.dump("nuking expired cart");
+						app.model.destroy("cartDetail");
+						app.calls.appCartCreate.init({'callback':'handleNewSession'},'immutable');
+						app.model.dispatchThis('immutable');
+						//cart is done, let's grab a new one
+						}
+					}}},"immutable");
+				app.model.dispatchThis('immutable');
+				}
+			
 //if ?debug=anything is on URI, show all elements with a class of debug.
 if(app.u.getParameterByName('debug'))	{
 	$('.debug').show().append("<div class='clearfix'>Model Version: "+app.model.version+" and release: "+app.vars.release+"</div>");
